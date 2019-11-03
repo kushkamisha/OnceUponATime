@@ -130,8 +130,8 @@ GameObject:
   m_Component:
   - component: {fileID: 45497815}
   - component: {fileID: 45497818}
-  - component: {fileID: 45497817}
   - component: {fileID: 45497816}
+  - component: {fileID: 45497817}
   - component: {fileID: 45497819}
   m_Layer: 0
   m_Name: hero-idle-back
@@ -184,11 +184,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 45497814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e6e858c9e2d3e8409213f895226fe1e, type: 3}
+  m_Script: {fileID: 11500000, guid: ac58c8c15d752474485ee68e3691f06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 45497816}
+  anim: {fileID: 45497819}
 --- !u!212 &45497818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -238,21 +239,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &45497819
-Animation:
+--- !u!95 &45497819
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45497814}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ec2b4d9017e392b4086814acbae44acf, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5942cebfecb640468ef1f173c101447, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &454246791
 GameObject:
   m_ObjectHideFlags: 0
