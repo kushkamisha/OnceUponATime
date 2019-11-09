@@ -14,7 +14,12 @@ public class Game : MonoBehaviour
     List<GameObject> objects;
 
     void Start () {
-       /* GameObject hero = GameObject.Instantiate(GameObject.Find(prefab.texture.ToString())) as GameObject;*/
+        Debug.Log(prefab.name);
+        Debug.Log(prefab);
+        Debug.Log(prefab.name);
+        Debug.Log(prefab.name);
+        Debug.Log(prefab.name);
+        GameObject hero = GameObject.Instantiate(GameObject.Find(prefab.texture.ToString())) as GameObject;
         
         CreateObject();
     }
