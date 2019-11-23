@@ -176,6 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 351460891}
+  - component: {fileID: 351460892}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -197,6 +198,19 @@ Transform:
   m_Father: {fileID: 921150682}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &351460892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351460890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a47fc514b0d4d2c9e54eff0520cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMoveSpeed: 5
 --- !u!1 &454246791
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2e816edc8a44202ab345911aabbcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  model: {fileID: 351460892}
   view: {fileID: 345584456}
 --- !u!1 &1432139141
 GameObject:
@@ -792,7 +807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac58c8c15d752474485ee68e3691f06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   rb: {fileID: 1572762053}
   anim: {fileID: 1572762051}
 --- !u!50 &1572762053
@@ -1014,6 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c949533ffd94b3fb582f1b0b7d856e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenesDir: Scenes/
   sceneName: Dungeon
 --- !u!68 &1855613977
 EdgeCollider2D:

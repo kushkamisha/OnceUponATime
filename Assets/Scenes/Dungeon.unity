@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358781406}
+  - component: {fileID: 358781407}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -150,6 +151,19 @@ Transform:
   m_Father: {fileID: 1595130911}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &358781407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358781405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a47fc514b0d4d2c9e54eff0520cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMoveSpeed: 5
 --- !u!1 &457765749
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +355,7 @@ GameObject:
   - component: {fileID: 1566255224}
   - component: {fileID: 1566255222}
   - component: {fileID: 1566255223}
+  - component: {fileID: 1566255226}
   m_Layer: 0
   m_Name: Lvl Door
   m_TagString: Untagged
@@ -360,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c949533ffd94b3fb582f1b0b7d856e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenesDir: Scenes/
   sceneName: Start
 --- !u!68 &1566255223
 EdgeCollider2D:
@@ -443,6 +459,20 @@ Transform:
   m_Father: {fileID: 2114981968}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566255226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566255221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c949533ffd94b3fb582f1b0b7d856e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenesDir: Scenes/
+  sceneName: Start
 --- !u!1 &1595130910
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2e816edc8a44202ab345911aabbcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  model: {fileID: 358781407}
   view: {fileID: 1051563073}
 --- !u!1 &1621528135
 GameObject:
@@ -656,7 +687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac58c8c15d752474485ee68e3691f06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   rb: {fileID: 1699413936}
   anim: {fileID: 1699413934}
 --- !u!50 &1699413936

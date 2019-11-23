@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Contains all views related to the app
-public class View : MonoBehaviour
+public class GameView : Element
 {
     // Reference to the player
     public PlayerView player;

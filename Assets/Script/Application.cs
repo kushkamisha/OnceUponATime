@@ -13,9 +13,9 @@ public class Element : MonoBehaviour
 public class Application : MonoBehaviour
 {
     // Reference to the root instances of the MVC
-    // public Model model;
-    public View view;
-    // public Controller controller;
+    public GameModel model;
+    public GameView view;
+    // public GameController controller;
 
     void Start() {}
 }
