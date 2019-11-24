@@ -1,5 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using thelab.mvc;
+using amvcc;
 
 public class Application : BaseApplication<GameModel, GameView, GameController> {}

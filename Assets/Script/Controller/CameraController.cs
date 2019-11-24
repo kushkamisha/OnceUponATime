@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
-using thelab.mvc;
+using amvcc;
 
 public class CameraController : Controller<Application>
 {
-    public PlayerView player;
     private Vector3 offset;
 
-    // Start is called before the first frame update
-    void Start() { offset = transform.position - player.transform.position; }
+    public void init()
+    {
+        offset = app.view.mainCamera.transform.position - app.model.mainCamera.player.transform.position;
+    }
 
-    // LateUpdate is called after Update each frame
-    void LateUpdate()
-    { transform.position = player.transform.position + offset; }
+    public void move()
+    {
+        app.view.mainCamera.transform.position = app.model.mainCamera.player.transform.position + offset;
+    }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using thelab.mvc;
+using amvcc;
 
 public class PlayerModel : Model<Application>
 {

@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 358781406}
   - component: {fileID: 358781408}
   - component: {fileID: 358781407}
+  - component: {fileID: 358781409}
+  - component: {fileID: 358781410}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -177,6 +179,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbab55700c2484ffd9fb75e95f785da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &358781409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358781405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3310daa477f834c61a379aa412b5fa42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1699413940}
+--- !u!114 &358781410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358781405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 049d461391c134a0e91aade149dabc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &457765749
@@ -292,6 +319,8 @@ GameObject:
   - component: {fileID: 893816437}
   - component: {fileID: 893816438}
   - component: {fileID: 893816439}
+  - component: {fileID: 893816440}
+  - component: {fileID: 893816441}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -335,6 +364,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b33b3faa1712b47e5bfbbcd998cb9593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &893816440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893816436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a56122ca344d340b24ab5c714381a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &893816441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893816436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ea9869396504fe4b72b4523e0a4c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1051563071
@@ -393,8 +446,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1566255225}
   - component: {fileID: 1566255224}
-  - component: {fileID: 1566255222}
   - component: {fileID: 1566255223}
+  - component: {fileID: 1566255222}
   m_Layer: 0
   m_Name: Lvl Door
   m_TagString: Untagged
@@ -411,11 +464,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566255221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3c949533ffd94b3fb582f1b0b7d856e, type: 3}
+  m_Script: {fileID: 11500000, guid: c676e8958c99f48ffab9e4278d4fe514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenesDir: Scenes/
-  sceneName: Start
 --- !u!68 &1566255223
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -556,7 +607,7 @@ GameObject:
   - component: {fileID: 1621528138}
   - component: {fileID: 1621528137}
   - component: {fileID: 1621528136}
-  - component: {fileID: 1621528139}
+  - component: {fileID: 1621528140}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -629,7 +680,7 @@ Transform:
   m_Father: {fileID: 1051563072}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1621528139
+--- !u!114 &1621528140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -638,10 +689,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621528135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2a56122ca344d340b24ab5c714381a8, type: 3}
+  m_Script: {fileID: 11500000, guid: c80ee535abedb44618490286d668fb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1699413940}
 --- !u!1 &1699413932
 GameObject:
   m_ObjectHideFlags: 0
