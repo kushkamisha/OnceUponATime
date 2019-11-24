@@ -4,13 +4,6 @@ using thelab.mvc;
 
 public class PlayerView : View<Application>
 {
-    void Update()
-    {
-        Notify("player.move", "player");
-    }
-
-    void FixedUpdate()
-    {
-        Notify("player.move", "rb");
-    }
+    void Update() { app.Notify("player.move", app.controller, "player"); }
+    void FixedUpdate() { Notify("player.move", "rb"); }
 }

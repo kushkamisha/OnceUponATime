@@ -166,7 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d68e237b3b2f4e55b2456f4ada0091e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1572762048}
 --- !u!1 &351460890
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351460891}
   - component: {fileID: 351460892}
+  - component: {fileID: 351460893}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -207,10 +207,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 351460890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a47fc514b0d4d2c9e54eff0520cb51, type: 3}
+  m_Script: {fileID: 11500000, guid: cbab55700c2484ffd9fb75e95f785da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &351460893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351460890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f9c79c5af1f4949b70c7002ec19d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoveSpeed: 5
+  playerRB: {fileID: 1572762053}
+  playerAnim: {fileID: 1572762051}
 --- !u!1 &454246791
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +734,6 @@ GameObject:
   - component: {fileID: 1572762055}
   - component: {fileID: 1572762054}
   - component: {fileID: 1572762053}
-  - component: {fileID: 1572762052}
   - component: {fileID: 1572762051}
   - component: {fileID: 1572762050}
   - component: {fileID: 1572762049}
@@ -795,21 +808,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1572762052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572762047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac58c8c15d752474485ee68e3691f06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1572762053}
-  anim: {fileID: 1572762051}
-  playerMoveSpeed: 5
 --- !u!50 &1572762053
 Rigidbody2D:
   serializedVersion: 4
@@ -1092,6 +1090,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052698738}
+  - component: {fileID: 2052698739}
+  - component: {fileID: 2052698740}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -1113,3 +1113,27 @@ Transform:
   m_Father: {fileID: 921150682}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2052698739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052698737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac58c8c15d752474485ee68e3691f06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2052698740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052698737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33b3faa1712b47e5bfbbcd998cb9593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

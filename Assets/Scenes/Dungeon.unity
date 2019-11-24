@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358781406}
+  - component: {fileID: 358781408}
   - component: {fileID: 358781407}
   m_Layer: 0
   m_Name: Model
@@ -164,7 +165,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoveSpeed: 5
-  bounces: 3
+  playerRB: {fileID: 1699413936}
+  playerAnim: {fileID: 1699413934}
+--- !u!114 &358781408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358781405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbab55700c2484ffd9fb75e95f785da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &457765749
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893816437}
   - component: {fileID: 893816438}
+  - component: {fileID: 893816439}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -310,9 +325,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac58c8c15d752474485ee68e3691f06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1699413936}
-  anim: {fileID: 1699413934}
-  playerMoveSpeed: 5
+--- !u!114 &893816439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893816436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33b3faa1712b47e5bfbbcd998cb9593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1051563071
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2e816edc8a44202ab345911aabbcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verbose: 0
+  verbose: -1
 --- !u!1 &1621528135
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,37 +4,20 @@ using thelab.mvc;
 
 public class PlayerController : Controller<Application>
 {
-    public Rigidbody2D rb;
-    Vector2 movement;
-    public Animator anim;
-    public float playerMoveSpeed = 5f;
-
-    public override void OnNotification(string p_event, Object p_target, params object[] p_data)
-    {
-        switch(p_event)
-        {
-            case "player.move":
-                string type = (string)p_data[0];
-                    if (type == "player")
-                        movePlayer();
-                    else if (type == "rb")
-                        moveRB();
-                break;
-        }
-    }
-
-    void movePlayer()
+    private Vector2 movement;
+    
+    public void movePlayer()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        anim.SetFloat("Horizontal", movement.x);
-        anim.SetFloat("Vertical", movement.y);
-        anim.SetFloat("Speed", movement.sqrMagnitude);
+        app.model.player.playerAnim.SetFloat("Horizontal", movement.x);
+        app.model.player.playerAnim.SetFloat("Vertical", movement.y);
+        app.model.player.playerAnim.SetFloat("Speed", movement.sqrMagnitude);
     }
 
-    void moveRB()
+    public void moveRB()
     {
-        rb.MovePosition(rb.position + movement * playerMoveSpeed * Time.fixedDeltaTime);
+        app.model.player.playerRB.MovePosition(app.model.player.playerRB.position + movement * app.model.player.playerMoveSpeed * Time.fixedDeltaTime);
     }
 }
