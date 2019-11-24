@@ -1,14 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+using thelab.mvc;
 
-public class PlayerController : Element
+public class PlayerController : Controller<Application>
 {
     public Rigidbody2D rb;
     Vector2 movement;
     public Animator anim;
+    public float playerMoveSpeed = 5f;
 
-    void Update()
+    public override void OnNotification(string p_event, Object p_target, params object[] p_data)
+    {
+        switch(p_event)
+        {
+            case "player.move":
+                string type = (string)p_data[0];
+                    if (type == "player")
+                        movePlayer();
+                    else if (type == "rb")
+                        moveRB();
+                break;
+        }
+    }
+
+    void movePlayer()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -18,8 +33,8 @@ public class PlayerController : Element
         anim.SetFloat("Speed", movement.sqrMagnitude);
     }
 
-    void FixedUpdate()
+    void moveRB()
     {
-        rb.MovePosition(rb.position + movement * app.model.playerMoveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * playerMoveSpeed * Time.fixedDeltaTime);
     }
 }

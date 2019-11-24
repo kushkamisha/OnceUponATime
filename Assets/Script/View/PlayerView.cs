@@ -1,7 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+using thelab.mvc;
 
-public class PlayerView : Element
+public class PlayerView : View<Application>
 {
+    void Update()
+    {
+        Notify("player.move", "player");
+    }
+
+    void FixedUpdate()
+    {
+        Notify("player.move", "rb");
+    }
 }
