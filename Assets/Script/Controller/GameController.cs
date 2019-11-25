@@ -38,11 +38,9 @@ public class GameController : Controller<Application>
                 break;
             case "enemy.look_around":
                 type = (string)p_data[0];
-                if (type == "enemy")
-                {
-                    
-                    enemy.movePlayer((float)-0.01, (float)-0.01);
-                }
+                Vector3 playerPosition = app.model.player.playerRB.position;
+                if (type == "enemy" & enemy.watchPlayer(playerPosition))
+                    enemy.follow((float)playerPosition[0], (float)playerPosition[1]);
                 if (type == "rb")
                     enemy.moveRB();
                 break;

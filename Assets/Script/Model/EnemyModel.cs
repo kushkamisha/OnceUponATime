@@ -7,4 +7,5 @@ public class EnemyModel : Model<Application>
     public float playerMoveSpeed = 4f;
     public Rigidbody2D playerRB;
     public Animator enemyAnim;
+    public float RadiusOfVision = 10f;
 }
