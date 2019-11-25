@@ -35,7 +35,16 @@ public class GameController : Controller<Application>
                     player.movePlayer();
                 else if (type == "rb")
                     player.moveRB();
-
+                break;
+            case "enemy.look_around":
+                type = (string)p_data[0];
+                if (type == "enemy")
+                {
+                    
+                    enemy.movePlayer((float)-0.01, (float)-0.01);
+                }
+                if (type == "rb")
+                    enemy.moveRB();
                 break;
             case "camera":
                 type = (string)p_data[0];

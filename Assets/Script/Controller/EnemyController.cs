@@ -6,24 +6,20 @@ public class EnemyController : Controller<Application>
 {
     private Vector2 movement;
 
-    public void movePlayer(int x, int y)
+    public void movePlayer(float x, float y)
     {
         movement.x = x;
         movement.y = y;
-
-        app.model.enemy.playerAnim.SetFloat("Horizontal", movement.x);
-        app.model.enemy.playerAnim.SetFloat("Vertical", movement.y);
-        app.model.enemy.playerAnim.SetFloat("Speed", movement.sqrMagnitude);
+        Vector3 coordinates = app.model.enemy.transform.position;
+        app.model.enemy.transform.position = new Vector3(coordinates[0] + x, coordinates[1] + y, coordinates[2]);
+        
+        /*   app.model.enemy.enemyAnim.SetFloat("Horizontal", movement.x);
+           app.model.enemy.enemyAnim.SetFloat("Vertical", movement.y);
+           app.model.enemy.enemyAnim.SetFloat("Speed", movement.sqrMagnitude);*/
     }
 
     public void moveRB()
     {
         app.model.enemy.playerRB.MovePosition(app.model.enemy.playerRB.position + movement * app.model.enemy.playerMoveSpeed * Time.fixedDeltaTime);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        movePlayer(1, 1);
     }
 }
