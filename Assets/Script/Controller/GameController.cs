@@ -11,6 +11,10 @@ public class GameController : Controller<Application>
     public PlayerController player { get { return m_player = Assert<PlayerController>(m_player); } }
     private PlayerController m_player;
 
+    // Reference to the Enemy controller
+    public EnemyController enemy { get { return m_enemy = Assert<EnemyController>(m_enemy); } }
+    private EnemyController m_enemy;
+
     // Reference to the Camera controller
     public CameraController mainCamera { get { return m_mainCamera = Assert<CameraController>(m_mainCamera); } }
     private CameraController m_mainCamera;
