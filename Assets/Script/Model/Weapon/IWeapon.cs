@@ -1,18 +1,18 @@
 ﻿interface IWeapon
 {
     /* Radius of viewing */
-    float ViewingRadius { get; set; }
+    float ViewingRadius { get; }
 
     /* Creature move speed */
-    float Speed { get; set; }
+    float Speed { get; }
 
     /* Creature defence coefficient */
-    float Defence { get; set; }
+    float Defence { get; }
 
     /* Creature attack force coefficient */
-    float force { get; set; }
+    float Force { get; }
 
     /* Creature speed of striking */
-    float AttackSpeed { get; set; }
+    float AttackSpeed { get; }
 
 }
