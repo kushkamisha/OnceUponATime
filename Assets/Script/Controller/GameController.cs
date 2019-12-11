@@ -5,8 +5,6 @@ using amvcc;
 // Contains all controllers related to the app
 public class GameController : Controller<Application>
 {
-
-    private Vector3 offset;
     // Reference to the Player controller
     public PlayerController player { get { return m_player = Assert<PlayerController>(m_player); } }
     private PlayerController m_player;
@@ -32,15 +30,14 @@ public class GameController : Controller<Application>
             case "player.move":
                 type = (string)p_data[0];
                 if (type == "player")
-                    player.movePlayer();
+                    player.move();
                 else if (type == "rb")
                     player.moveRB();
                 break;
             case "enemy.look_around":
                 type = (string)p_data[0];
-                Vector3 playerPosition = app.model.player.playerRB.position;
-                if (type == "enemy" & enemy.watchPlayer(playerPosition))
-                    enemy.follow((float)playerPosition[0], (float)playerPosition[1]);
+                if (type == "enemy" & enemy.watchPlayer(app.model.player.playerRB.position))
+                    enemy.follow(app.model.player.playerRB.position);
                 if (type == "rb")
                     enemy.moveRB();
                 break;

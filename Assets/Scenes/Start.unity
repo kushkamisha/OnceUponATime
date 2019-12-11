@@ -221,12 +221,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 351460890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60f9c79c5af1f4949b70c7002ec19d05, type: 3}
+  m_Script: {fileID: 11500000, guid: eadc086cfdda84c569755f0d08e8c791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMoveSpeed: 5
-  playerRB: {fileID: 1572762053}
-  playerAnim: {fileID: 1572762051}
 --- !u!114 &351460894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1572762048}
+  enemy: {fileID: 0}
 --- !u!114 &351460895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1162,7 +1160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2052698737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b33b3faa1712b47e5bfbbcd998cb9593, type: 3}
+  m_Script: {fileID: 11500000, guid: eadc086cfdda84c569755f0d08e8c791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2052698741

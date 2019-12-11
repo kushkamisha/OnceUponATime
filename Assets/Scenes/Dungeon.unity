@@ -130,10 +130,10 @@ GameObject:
   m_Component:
   - component: {fileID: 358781406}
   - component: {fileID: 358781408}
-  - component: {fileID: 358781407}
   - component: {fileID: 358781409}
   - component: {fileID: 358781410}
   - component: {fileID: 358781411}
+  - component: {fileID: 358781407}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -164,12 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 358781405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60f9c79c5af1f4949b70c7002ec19d05, type: 3}
+  m_Script: {fileID: 11500000, guid: bd926c7f288d3054d85aceb17409eb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMoveSpeed: 5
-  playerRB: {fileID: 1699413936}
-  playerAnim: {fileID: 1699413934}
+  playerRB: {fileID: 0}
+  playerAnim: {fileID: 0}
 --- !u!114 &358781408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,13 +218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 358781405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bbd19b18c0539545acb66574556c359, type: 3}
+  m_Script: {fileID: 11500000, guid: 15b7414c13d97cc479de62986711168a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMoveSpeed: 0.01
-  playerRB: {fileID: 1914559838}
-  enemyAnim: {fileID: 1914559837}
-  RadiusOfVision: 8
+  creatureRB: {fileID: 0}
+  creatureAnim: {fileID: 0}
 --- !u!1 &457765749
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,10 +335,10 @@ GameObject:
   m_Component:
   - component: {fileID: 893816437}
   - component: {fileID: 893816438}
-  - component: {fileID: 893816439}
   - component: {fileID: 893816440}
   - component: {fileID: 893816441}
   - component: {fileID: 893816442}
+  - component: {fileID: 893816439}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -384,7 +381,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 893816436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b33b3faa1712b47e5bfbbcd998cb9593, type: 3}
+  m_Script: {fileID: 11500000, guid: 53d0bef220a82b648bcfd7876553960e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &893816440
@@ -420,7 +417,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 893816436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d6b388d381725345b89e1906fb25f9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 224b0f9b6ee105f4d9a549dcb0f48f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1051563071
