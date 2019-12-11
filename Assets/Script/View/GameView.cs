@@ -9,6 +9,9 @@ public class GameView : View<Application>
     public PlayerView player { get { return m_player = Assert<PlayerView>(m_player); } }
     private PlayerView m_player;
 
+    public EnemyView enemy { get { return m_enemy = Assert<EnemyView>(m_enemy); } }
+    private EnemyView m_enemy;
+
     // Reference to the Camera view
     public CameraView mainCamera { get { return m_mainCamera = Assert<CameraView>(m_mainCamera); } }
     private CameraView m_mainCamera;

@@ -11,6 +11,10 @@ public class GameController : Controller<Application>
     public PlayerController player { get { return m_player = Assert<PlayerController>(m_player); } }
     private PlayerController m_player;
 
+    // Reference to the Enemy controller
+    public EnemyController enemy { get { return m_enemy = Assert<EnemyController>(m_enemy); } }
+    private EnemyController m_enemy;
+
     // Reference to the Camera controller
     public CameraController mainCamera { get { return m_mainCamera = Assert<CameraController>(m_mainCamera); } }
     private CameraController m_mainCamera;
@@ -31,7 +35,14 @@ public class GameController : Controller<Application>
                     player.movePlayer();
                 else if (type == "rb")
                     player.moveRB();
-
+                break;
+            case "enemy.look_around":
+                type = (string)p_data[0];
+                Vector3 playerPosition = app.model.player.playerRB.position;
+                if (type == "enemy" & enemy.watchPlayer(playerPosition))
+                    enemy.follow((float)playerPosition[0], (float)playerPosition[1]);
+                if (type == "rb")
+                    enemy.moveRB();
                 break;
             case "camera":
                 type = (string)p_data[0];
