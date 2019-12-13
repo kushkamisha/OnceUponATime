@@ -4,8 +4,8 @@ using amvcc;
 
 public class EnemyModel : Model<Application>
 {
-    public float playerMoveSpeed = 4f;
-    public Rigidbody2D playerRB;
+    public float enemyMoveSpeed = 4f;
+    public Rigidbody2D enemyRB;
     public Animator enemyAnim;
     public float RadiusOfVision = 10f;
 }

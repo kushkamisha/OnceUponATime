@@ -289,7 +289,8 @@ PrefabInstance:
         type: 3}
       propertyPath: enemy
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6368657171747835794, guid: b997d192b18e043c3b13331ea01d224a,
+        type: 3}
     - target: {fileID: 493772288368991451, guid: e5b59df6cddc4406eb097ac46ab52736,
         type: 3}
       propertyPath: playerRB
@@ -299,7 +300,8 @@ PrefabInstance:
         type: 3}
       propertyPath: enemyAnim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6368657171747835795, guid: b997d192b18e043c3b13331ea01d224a,
+        type: 3}
     - target: {fileID: 493772288368991451, guid: e5b59df6cddc4406eb097ac46ab52736,
         type: 3}
       propertyPath: RadiusOfVision
@@ -310,6 +312,12 @@ PrefabInstance:
       propertyPath: playerMoveSpeed
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 493772288368991451, guid: e5b59df6cddc4406eb097ac46ab52736,
+        type: 3}
+      propertyPath: enemyRB
+      value: 
+      objectReference: {fileID: 6368657171747835792, guid: b997d192b18e043c3b13331ea01d224a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b59df6cddc4406eb097ac46ab52736, type: 3}
 --- !u!4 &238724107 stripped
@@ -355,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3561678475199145208, guid: d015c1e0c93c740bba33afa53f9135f1, type: 3}
-  enemy: {fileID: 6368657171747835796, guid: b997d192b18e043c3b13331ea01d224a, type: 3}
+  enemy: {fileID: 6368657171747835794, guid: b997d192b18e043c3b13331ea01d224a, type: 3}
   enemyAmount: 3
   tiles:
   - {fileID: 2511505557434413843, guid: dee0ec41cb4494194a5a345f5d15c01c, type: 3}
