@@ -5,7 +5,7 @@ using amvcc;
 
 public class LvlGenModel : Model<Application>
 {
-    public GameObject player;
+    public PlayerView player;
     public GameObject enemy;
     public int enemyAmount = 10;
 
