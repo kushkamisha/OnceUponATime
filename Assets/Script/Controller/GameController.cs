@@ -23,6 +23,10 @@ public class GameController : Controller<Application>
     public LevelController level { get { return m_level = Assert<LevelController>(m_level); } }
     private LevelController m_level;
 
+    // Reference to the Level Generator controller
+    public LvlGenController lvlgen { get { return m_lvlgen = Assert<LvlGenController>(m_lvlgen); } }
+    private LvlGenController m_lvlgen;
+
     public override void OnNotification(string p_event, Object p_target, params object[] p_data)
     {
         string type;
@@ -56,7 +60,11 @@ public class GameController : Controller<Application>
                 Collider2D col = (Collider2D)p_data[0];
                 level.loadScene(col);
                 break;
-
+            case "level":
+                type = (string)p_data[0];
+                if (type == "generate")
+                    lvlgen.GenerateLevel();
+                break;
         }
     }
 }

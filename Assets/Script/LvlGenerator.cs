@@ -37,14 +37,14 @@ public class LvlGenerator : MonoBehaviour
 
     void Start()
     {
-        parent = new GameObject().transform;
-        parent.name = "LvlParent";
-        StartCoroutine(GenerateLevel());
+        GenerateLevel();
         // Random.seed = 10;
     }
 
-    IEnumerator GenerateLevel()
+    void GenerateLevel()
     {
+        initParentFolder();
+
         for (int i = 0; i < tileAmount; i++)
         {
             float direction = Random.Range(0f, 1f);
@@ -53,12 +53,8 @@ public class LvlGenerator : MonoBehaviour
             CreateTile(tile);
             CallMoveGen(direction);
 
-            yield return new WaitForSeconds(waitTime);
-
             if (i == tileAmount - 1) Finish();
         }
-
-        yield return 0;
     }
 
     void CallMoveGen(float ranDir)
@@ -143,7 +139,7 @@ public class LvlGenerator : MonoBehaviour
     {
         for (int x = 0; x < xAmount; x++)
         {
-            for (int y = 0; y < yAmount; y++)
+            for (int y = (int)yAmount; y > 0; y--)
             {
                 Vector3 wallPos = new Vector3(
                     (minX - extraWallX * tileSize) + (x * tileSize),
@@ -155,5 +151,11 @@ public class LvlGenerator : MonoBehaviour
                 }
             }
         }
+    }
+
+    void initParentFolder()
+    {
+        parent = new GameObject().transform;
+        parent.name = "LvlParent";
     }
 }
