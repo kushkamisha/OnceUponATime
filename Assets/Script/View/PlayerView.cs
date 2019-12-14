@@ -4,6 +4,10 @@ using amvcc;
 
 public class PlayerView : View<Application>
 {
-    void Update() { app.Notify("player.move", app.controller, "player"); }
-    void FixedUpdate() { Notify("player.move", "rb"); }
+    void Update() { 
+        app.Notify("player", app.controller, "move");
+    }
+    void FixedUpdate() { 
+        Notify("player", "moveRB");
+    }
 }

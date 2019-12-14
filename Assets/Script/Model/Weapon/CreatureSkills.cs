@@ -9,32 +9,32 @@ public class CreatureSkills: IWeapon
     private float defaultForce = 0f;
     private float defaultAttackSpeed = 0f;
 
-    private IWeapon Weapon = new Melee();
+    private IWeapon weapon = new Melee();
 
 
     public CreatureSkills(){}
 
-    public CreatureSkills(float ViewingRadius, float Speed, float Defence, float Force, float AttackSpeed) {
-        if (ViewingRadius <= 0 | Speed <= 0 | Defence < 0 | Force < 0 | AttackSpeed <= 0)
+    public CreatureSkills(float viewingRadius, float speed, float defence, float force, float attackSpeed) {
+        if (viewingRadius <= 0 | speed <= 0 | defence < 0 | force < 0 | attackSpeed <= 0)
         {
             throw new System.Exception("The values can not be negative");
         }
 
-        this.defaultViewingRadius = ViewingRadius;
-        this.defaultSpeed = Speed;
-        this.defaultDefence = Defence;
-        this.defaultForce = Force;
-        this.defaultAttackSpeed = AttackSpeed;
+        this.defaultViewingRadius = viewingRadius;
+        this.defaultSpeed = speed;
+        this.defaultDefence = defence;
+        this.defaultForce = force;
+        this.defaultAttackSpeed = attackSpeed;
     }
 
-    public float ViewingRadius { get => this.defaultViewingRadius + this.Weapon.ViewingRadius; }
-    public float Speed { get => this.defaultSpeed + this.Weapon.Speed; }
-    public float Defence { get => this.defaultDefence + this.Weapon.Defence; }
-    public float Force { get => this.defaultForce + this.Weapon.Force; }
-    public float AttackSpeed { get => this.defaultAttackSpeed + this.Weapon.AttackSpeed; }
+    public float viewingRadius { get => this.defaultViewingRadius + this.weapon.viewingRadius; }
+    public float speed { get => this.defaultSpeed + this.weapon.speed; }
+    public float defence { get => this.defaultDefence + this.weapon.defence; }
+    public float force { get => this.defaultForce + this.weapon.force; }
+    public float attackSpeed { get => this.defaultAttackSpeed + this.weapon.attackSpeed; }
 
-    void setNewWeapon(IWeapon Weapon)
+    void setNewWeapon(IWeapon weapon)
     {
-        this.Weapon = Weapon;
+        this.weapon = weapon;
     }    
 }

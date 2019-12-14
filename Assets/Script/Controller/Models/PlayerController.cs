@@ -3,20 +3,24 @@ using amvcc;
 
 public class PlayerController : Controller<Application>
 {
-
     private CreatureAttack player;
     void Start(){
-        player = new CreatureAttack(app.model.player.playerRB.position);
+        this.player = new CreatureAttack(
+            app.model.player.playerRB.position, 
+            app.model.player.viewingRadius, 
+            app.model.player.speed,
+            app.model.player.defence,
+            app.model.player.force,
+            app.model.player.attackSpeed
+            );
     }
 
     public void move()
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
-        Debug.Log(this.player.position);
-        this.player.move(x, y);
-    /*    app.model.player.playerRB.position = this.player.position;*/
 
+        this.player.move(x, y);
         app.model.player.playerAnim.SetFloat("Horizontal", this.player.movement.x);
         app.model.player.playerAnim.SetFloat("Vertical", this.player.movement.y);
         app.model.player.playerAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
@@ -24,6 +28,6 @@ public class PlayerController : Controller<Application>
 
     public void moveRB()
     {
-        app.model.player.playerRB.MovePosition(app.model.player.playerRB.position + this.player.movement * this.player.speed * Time.fixedDeltaTime);
+        app.model.player.playerRB.MovePosition(this.player.position);
     }
 }

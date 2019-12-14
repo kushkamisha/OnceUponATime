@@ -25,22 +25,24 @@ public class GameController : Controller<Application>
     {
         string type;
 
-        switch(p_event)
+        switch (p_event)
         {
-            case "player.move":
+            case "player":
                 type = (string)p_data[0];
-                if (type == "player")
+                if (type == "move")
                     player.move();
-                else if (type == "rb")
+                else if (type == "moveRB")
                     player.moveRB();
                 break;
-            case "enemy.look_around":
+
+            case "enemy":
                 type = (string)p_data[0];
-                if (type == "enemy" & enemy.watchPlayer(app.model.player.playerRB.position))
+                if (type == "lookAround" & enemy.watchPlayer(app.model.player.playerRB.position))
                     enemy.follow(app.model.player.playerRB.position);
-                if (type == "rb")
+                if (type == "moveRB")
                     enemy.moveRB();
                 break;
+
             case "camera":
                 type = (string)p_data[0];
                 if (type == "init")
@@ -50,6 +52,7 @@ public class GameController : Controller<Application>
 
                 break;
             case "level door":
+
                 Collider2D col = (Collider2D)p_data[0];
                 level.loadScene(col);
                 break;

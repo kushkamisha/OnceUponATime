@@ -1,8 +1,8 @@
 ﻿public class Bludgeon : IWeapon
 {
-    public float ViewingRadius { get => -5f; }
-    public float Speed { get => -1f; }
-    public float Defence { get => 2f; }
-    public float Force {get => 5f; }
-    public float AttackSpeed { get => -3f; }
+    public float viewingRadius { get => -5f; }
+    public float speed { get => -1f; }
+    public float defence { get => 2f; }
+    public float force {get => 5f; }
+    public float attackSpeed { get => -3f; }
 }
