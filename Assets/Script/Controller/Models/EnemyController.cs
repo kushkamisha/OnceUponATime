@@ -41,4 +41,9 @@ public class EnemyController : Model<Application>
         this.creature.follow(creature_position.x, creature_position.y);
     }
 
+    public Vector2 getPosition()
+    {
+        return this.creature.position;
+    }
+
 }

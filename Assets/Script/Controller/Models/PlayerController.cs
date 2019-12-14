@@ -6,7 +6,7 @@ public class PlayerController : Controller<Application>
     private CreatureAttack player;
     void Start(){
         this.player = new CreatureAttack(
-            app.model.player.playerRB.position, 
+            app.model.player.creatureRB.position, 
             app.model.player.viewingRadius, 
             app.model.player.speed,
             app.model.player.defence,
@@ -21,13 +21,18 @@ public class PlayerController : Controller<Application>
         float y = Input.GetAxisRaw("Vertical");
 
         this.player.move(x, y);
-        app.model.player.playerAnim.SetFloat("Horizontal", this.player.movement.x);
-        app.model.player.playerAnim.SetFloat("Vertical", this.player.movement.y);
-        app.model.player.playerAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
+        app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
+        app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
+        app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
     }
 
     public void moveRB()
     {
-        app.model.player.playerRB.MovePosition(this.player.position);
+        app.model.player.creatureRB.MovePosition(this.player.position);
+    }
+
+    public Vector2 getPosition()
+    {
+        return this.player.position;
     }
 }

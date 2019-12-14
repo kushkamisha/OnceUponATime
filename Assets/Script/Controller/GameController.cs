@@ -29,6 +29,7 @@ public class GameController : Controller<Application>
         {
             case "player":
                 type = (string)p_data[0];
+                Debug.Log(type);
                 if (type == "move")
                     player.move();
                 else if (type == "moveRB")
@@ -37,8 +38,8 @@ public class GameController : Controller<Application>
 
             case "enemy":
                 type = (string)p_data[0];
-                if (type == "lookAround" & enemy.watchPlayer(app.model.player.playerRB.position))
-                    enemy.follow(app.model.player.playerRB.position);
+                if (type == "lookAround" & enemy.watchPlayer(player.getPosition()))
+                    enemy.follow(player.getPosition());
                 if (type == "moveRB")
                     enemy.moveRB();
                 break;
