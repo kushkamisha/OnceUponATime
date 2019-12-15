@@ -8,5 +8,6 @@ public class LevelTextModel : Model<Application>
     public GameObject levelTextObj;
 
     public string levelName = "Day";
-    public int levelNumber = 1;
+    public int levelNumber = 0;
+    public int defaultLevelNumber = 0;
 }

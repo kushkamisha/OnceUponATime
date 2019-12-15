@@ -7,7 +7,8 @@ public class LvlGenModel : Model<Application>
 {
     public PlayerView player;
     public EnemyView enemy;
-    public int enemyAmount = 10;
+    public int defaultEnemyAmount = 3;
+    public int enemyAmount = 3;
 
     public GameObject[] tiles;
     public GameObject wall;

@@ -79,6 +79,8 @@ public class GameController : Controller<Application>
                 type = (string)p_data[0];
                 if (type == "generate")
                     StartCoroutine(lvlgen.GenerateLevel());
+                else if (type == "init")
+                    level.Init();
                 break;
             case "level.text":
                 type = (string)p_data[0];

@@ -9,9 +9,6 @@ public class PlayerController : Controller<Application>
     private Vector2 mousePos;
 
     void Start(){
-        // Set the level number
-        PlayerPrefs.SetInt("level.number", app.model.lvltext.levelNumber);
-
         this.player = new CreatureAttack(
             app.model.player.creatureRB.position, 
             app.model.player.viewingRadius, 
@@ -79,23 +76,5 @@ public class PlayerController : Controller<Application>
     {
         GUI.Label(new Rect(10, 10, 100, 20), "Coins : " + coin_points);
         //GUI.Box(new Rect(10, 10, 50, 50), app.view.player.imahe, " " + coin_points);
-    }
-
-    // Pass data when a scene changes
-    void OnDisable()
-    {
-        PlayerPrefs.SetInt("level.number", app.model.lvltext.levelNumber);
-    }
-
-    // Load data for a new scene
-    void OnEnable()
-    {
-        app.model.lvltext.levelNumber = PlayerPrefs.GetInt("level.number") + 1; // change the number of the level
-    }
-
-    // Reset the level number to the default
-    void OnApplicationQuit()
-    {
-        app.model.lvltext.levelNumber = 0;
     }
 }
