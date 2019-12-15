@@ -25,6 +25,10 @@ public class GameController : Controller<Application>
     public LvlGenController lvlgen { get { return m_lvlgen = Assert<LvlGenController>(m_lvlgen); } }
     private LvlGenController m_lvlgen;
 
+    // Reference to the Level Generator controller
+    public LevelTextController lvltext { get { return m_lvltext = Assert<LevelTextController>(m_lvltext); } }
+    private LevelTextController m_lvltext;
+
     public override void OnNotification(string p_event, Object p_target, params object[] p_data)
     {
         string type;
@@ -74,8 +78,13 @@ public class GameController : Controller<Application>
             case "level":
                 type = (string)p_data[0];
                 if (type == "generate")
-                    // lvlgen.GenerateLevel();
                     StartCoroutine(lvlgen.GenerateLevel());
+                break;
+            case "level.text":
+                type = (string)p_data[0];
+                if (type == "wait")
+                    lvltext.SetText();
+                    StartCoroutine(lvltext.RemoveTextAfterTime());
                 break;
         }
     }

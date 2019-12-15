@@ -6,5 +6,4 @@ public class LevelModel : Model<Application>
 {
     public string scenesDir = "Scenes/";
     public string sceneName = "Start";
-    public string day = "Day 1";
 }

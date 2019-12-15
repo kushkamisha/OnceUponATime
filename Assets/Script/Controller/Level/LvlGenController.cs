@@ -112,9 +112,6 @@ public class LvlGenController : Controller<Application>
         );
         Instantiate(door, position, Quaternion.identity);
 
-        for (int i = 0; i < extremeYPositions.Count; i++)
-            Debug.Log(extremeYPositions[i]);
-
         // Spawn Enemies (Orcs)
         for (int i = 0; i < app.model.lvlgen.enemyAmount; i++)
         {
