@@ -7,12 +7,18 @@ public class LvlGenModel : Model<Application>
 {
     public PlayerView player;
     public EnemyView enemy;
-    public int enemyAmount = 10;
+    public int defaultEnemyAmount = 3;
+    public int enemyAmount = 3;
 
     public GameObject[] tiles;
     public GameObject wall;
 
     public List<Vector3> createdTiles;
+
+    public GameObject coin;
+    public int coinsToSpawn;
+    public GameObject heart;
+    public int heartsToSpawn;
 
     public int tileAmount;
     public int tileSize = 16;

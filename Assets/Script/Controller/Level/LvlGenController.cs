@@ -112,6 +112,18 @@ public class LvlGenController : Controller<Application>
         );
         Instantiate(door, position, Quaternion.identity);
 
+        // Spawn coins
+        for (int i = 0; i < app.model.lvlgen.coinsToSpawn; i++)
+        {
+            GameObject coin = Instantiate(app.model.lvlgen.coin, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
+        }
+
+        // Spawn hearts
+        for (int i = 0; i < app.model.lvlgen.heartsToSpawn; i++)
+        {
+            GameObject heart = Instantiate(app.model.lvlgen.heart, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
+        }
+
         // Spawn Enemies (Orcs)
         for (int i = 0; i < app.model.lvlgen.enemyAmount; i++)
         {

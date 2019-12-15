@@ -598,13 +598,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 3561678475199145208, guid: d015c1e0c93c740bba33afa53f9135f1, type: 3}
   enemy: {fileID: 6368657171747835794, guid: b997d192b18e043c3b13331ea01d224a, type: 3}
-  enemyAmount: 3
+  defaultEnemyAmount: 0
+  enemyAmount: 0
   tiles:
   - {fileID: 2511505557434413843, guid: dee0ec41cb4494194a5a345f5d15c01c, type: 3}
   - {fileID: 8848980327345902468, guid: 221b2a995ac4545c399e298b8557dcd6, type: 3}
   - {fileID: 3963604612861386028, guid: ad005c9cf68f54b61a0da4cd1bf4b601, type: 3}
   wall: {fileID: 5805697852633192529, guid: 1534bce1ece1742a48b4b5aefd1ebc14, type: 3}
   createdTiles: []
+  coin: {fileID: 5510523477451837846, guid: 83072bc02a8064ba4a07dad379353541, type: 3}
+  coinsToSpawn: 10
+  heart: {fileID: 3046337482219020411, guid: 98826ec5ce60c47d1a125f4b76003fdb, type: 3}
+  heartsToSpawn: 2
   tileAmount: 50
   tileSize: 16
   chanceUp: 0.25
@@ -651,6 +656,7 @@ MonoBehaviour:
   levelTextObj: {fileID: 549473700}
   levelName: Day
   levelNumber: 0
+  defaultLevelNumber: 0
 --- !u!114 &1022473523
 MonoBehaviour:
   m_ObjectHideFlags: 0
