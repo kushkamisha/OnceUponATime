@@ -649,7 +649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time2Disappear: 3
   levelTextObj: {fileID: 549473700}
-  levelName: Day 1
+  levelName: Day
+  levelNumber: 0
 --- !u!114 &1022473523
 MonoBehaviour:
   m_ObjectHideFlags: 0

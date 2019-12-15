@@ -9,13 +9,13 @@ public class LevelTextController : Controller<Application>
     public void SetText()
     {
         Text lvlText = app.model.lvltext.levelTextObj.transform.GetChild(0).gameObject.GetComponent<Text>();
-        lvlText.text = app.model.lvltext.levelName;
+        lvlText.text = app.model.lvltext.levelName + " " + app.model.lvltext.levelNumber.ToString();
     }
 
     public IEnumerator RemoveTextAfterTime()
     {
         yield return new WaitForSeconds(app.model.lvltext.time2Disappear);
-         Destroy(app.model.lvltext.levelTextObj);
+        Destroy(app.model.lvltext.levelTextObj);
     }
 }
 

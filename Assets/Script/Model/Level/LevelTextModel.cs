@@ -6,5 +6,7 @@ public class LevelTextModel : Model<Application>
 {
     public float time2Disappear = 5;
     public GameObject levelTextObj;
-    public string levelName = "Day 1";
+
+    public string levelName = "Day";
+    public int levelNumber = 1;
 }
