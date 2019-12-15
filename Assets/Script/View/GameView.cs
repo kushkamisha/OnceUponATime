@@ -23,4 +23,8 @@ public class GameView : View<Application>
     // Reference to the Level Generator view
     public LvlGenView lvlgen { get { return m_lvlgen = Assert<LvlGenView>(m_lvlgen); } }
     private LvlGenView m_lvlgen;
+
+    // Reference to the Level Text view
+    public LevelTextView lvltext { get { return m_lvltext = Assert<LevelTextView>(m_lvltext); } }
+    private LevelTextView m_lvltext;
 }
