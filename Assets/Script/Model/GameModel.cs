@@ -19,4 +19,8 @@ public class GameModel : Model<Application>
     // Reference to the Level model
     public LevelModel level { get { return m_level = Assert<LevelModel>(m_level); } }
     private LevelModel m_level;
+
+    // Reference to the Level Generator model
+    public LvlGenModel lvlgen { get { return m_lvlgen = Assert<LvlGenModel>(m_lvlgen); } }
+    private LvlGenModel m_lvlgen;
 }
