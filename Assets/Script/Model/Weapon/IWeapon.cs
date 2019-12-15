@@ -13,6 +13,6 @@
     float force { get; }
 
     /* Creature speed of striking */
-    float attackSpeed { get; }
+    int attackSpeed { get; }
 
 }

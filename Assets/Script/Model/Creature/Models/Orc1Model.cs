@@ -10,6 +10,6 @@ public class Orc1Model : Model<Application>
     public float viewingRadius = 10f;
     public float force = 5f;
     public float defence = 3f;
-    public float attackSpeed = 1f;
+    public int attackSpeed = 50;
 }
 

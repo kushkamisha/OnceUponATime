@@ -10,27 +10,50 @@ public class CreatureAttack : BaseCreature {
     public override float speed { get => this.skills.speed; }
     public override  float viewingRadius { get => this.skills.viewingRadius; }
 
+    private Constants constants = new Constants();
+    private int attackCounter = 0;
 
     public CreatureAttack(Vector3 position) : base(position)
     {
         this.skills = new CreatureSkills();
     }
 
-    public CreatureAttack(Vector3 position, float viewingRadius, float speed, float defence, float force, float attackSpeed): base(position)
+    public CreatureAttack(Vector3 position, float viewingRadius, float speed, float defence, float force, int attackSpeed): base(position)
     {
         this.skills = new CreatureSkills(viewingRadius, speed, defence, force, attackSpeed);
     }
 
-    /*public CreatureAttack(Vector3 position, float speed, float ViewingRadius, float v1, float v2) : base(position, speed, ViewingRadius)
-    {
-    }*/
-
-    public float attack() {
-        return this.skills.force;
+    public float giveDamage() {
+        return this.skills.force * constants.damageCoef;
     }
 
-    public float defence() {
-        return this.skills.defence;
+    public void decreaseHP(float value){
+        this.decreaseHP(value - this.skills.defence * constants.takeHitCoef);
+    }
+
+    public float attack()
+    {
+        float damage = -1f;
+        if (this.attackCounter == 0)
+        {
+            damage = this.giveDamage();
+            this.attackCounter = this.skills.attackSpeed;
+        }
+        else
+        {
+            this.attackCounter--;
+        }
+
+        return damage;
+
+    }
+
+    public void move(float x, float y){
+        base.move(x, y);
+        if (this.attackCounter != 0)
+        {
+            this.attackCounter--;
+        }
     }
 
 }

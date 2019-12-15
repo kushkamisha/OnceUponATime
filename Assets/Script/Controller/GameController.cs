@@ -29,7 +29,6 @@ public class GameController : Controller<Application>
         {
             case "player":
                 type = (string)p_data[0];
-                Debug.Log(type);
                 if (type == "move")
                     player.move();
                 else if (type == "moveRB")

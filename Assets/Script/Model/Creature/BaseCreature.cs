@@ -8,18 +8,21 @@ public class BaseCreature
     public Vector3 position;
     public virtual float speed { get; set; }
     public virtual float viewingRadius { get; set; }
+    public float hp { get; set; }
 
     public BaseCreature(Vector3 position)
     {
         this.movement = new Vector3(0, 0, 0);
+        this.hp = 100f;
         this.position = position;
         this.speed = 2f;
         this.viewingRadius = 10f;
     }
 
-    public BaseCreature(Vector3 position, float speed, float viewingRadius)
+    public BaseCreature(Vector3 position, float hp, float speed, float viewingRadius)
     {
         this.movement = new Vector3(0, 0, 0);
+        this.hp = hp;
         this.position = position;
         this.speed = speed;
         this.viewingRadius = viewingRadius;
@@ -53,6 +56,9 @@ public class BaseCreature
         return false;
     }
 
-
+    public void decreaseHP(float value)
+    {
+        this.hp = this.hp - value;
+    }
 
 }

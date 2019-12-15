@@ -4,5 +4,5 @@
     public float speed { get => 1f; }
     public float defence { get => 1f; }
     public float force { get => 1f; }
-    public float attackSpeed { get => 0f; }
+    public int attackSpeed { get => 0; }
 }
