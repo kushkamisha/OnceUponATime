@@ -68,7 +68,8 @@ public class PlayerController : Controller<Application>
     }
 
     public float getHP(){
-        return this.player.hp;
+        // return this.player.hp;
+        return 0.12159f;
     }
 
     private void OnGUI()

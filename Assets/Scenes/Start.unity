@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenesDir: Scenes/
-  sceneName: Start
+  sceneName: Dungeon
 --- !u!114 &351460896
 MonoBehaviour:
   m_ObjectHideFlags: 0
