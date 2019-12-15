@@ -37,6 +37,17 @@ public class GameController : Controller<Application>
                     player.move();
                 else if (type == "moveRB")
                     player.moveRB();
+                else if (type == "kicking")
+                    player.kickingPlayer();
+                break;
+
+            case "player.startPosHealth":
+                type = (string)p_data[0];
+                if (type == "startHealth")
+                    // player.startPosHealth();
+                    Debug.Log("Start Pos Health");
+                else if (type == "decrHealth")
+                    player.decreaseHP();
                 break;
 
             case "enemy":
