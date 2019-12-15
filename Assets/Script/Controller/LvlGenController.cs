@@ -100,8 +100,8 @@ public class LvlGenController : Controller<Application>
         for (int i = 0; i < app.model.lvlgen.enemyAmount; i++)
         {
             EnemyView enemy = Instantiate(app.model.lvlgen.enemy, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
-            // app.model.enemy.enemyRB = enemy.GetComponent<Rigidbody2D>();
-            // app.model.enemy.enemyAnim = enemy.GetComponent<Animator>();
+            app.model.enemy.creatureRB = enemy.GetComponent<Rigidbody2D>();
+            app.model.enemy.creatureAnim = enemy.GetComponent<Animator>();
         }
     }
 
