@@ -15,6 +15,9 @@ public class LvlGenController : Controller<Application>
     private float xAmount;
     private float yAmount;
 
+    private List<float> extremeYPositions;
+    private List<Vector3> wallPositions;
+
     // Generated blocks parent folder
     private Transform parent;
 
@@ -90,13 +93,29 @@ public class LvlGenController : Controller<Application>
 
     void SpawnObjects()
     {
-
+        // Spawn the player
         PlayerView player = Instantiate(app.model.lvlgen.player, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
 
         app.model.mainCamera.player = player;
         app.model.player.creatureRB = player.GetComponent<Rigidbody2D>();
         app.model.player.creatureAnim = player.GetComponent<Animator>();
 
+        // Spawn Level door
+        GameObject door = (GameObject)Resources.Load("Prefabs/Level Door", typeof(GameObject));
+        door.transform.localScale = new Vector3(5, 5, 0);
+        float yPos = extremeYPositions[Random.Range(0, extremeYPositions.Count)];
+        List<Vector3> createdTilesLine = app.model.lvlgen.createdTiles.FindAll(pos => pos.y == yPos);
+        Vector3 position = new Vector3(
+            createdTilesLine[Random.Range(0, createdTilesLine.Count)].x,
+            yPos + app.model.lvlgen.tileSize / 2,
+            0
+        );
+        Instantiate(door, position, Quaternion.identity);
+
+        for (int i = 0; i < extremeYPositions.Count; i++)
+            Debug.Log(extremeYPositions[i]);
+
+        // Spawn Enemies (Orcs)
         for (int i = 0; i < app.model.lvlgen.enemyAmount; i++)
         {
             EnemyView enemy = Instantiate(app.model.lvlgen.enemy, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
@@ -112,6 +131,9 @@ public class LvlGenController : Controller<Application>
         {
             if (app.model.lvlgen.createdTiles[i].y < minY) minY = app.model.lvlgen.createdTiles[i].y;
             if (app.model.lvlgen.createdTiles[i].y > maxY) maxY = app.model.lvlgen.createdTiles[i].y;
+
+            // extremeYPositions.Add(minY);
+            extremeYPositions.Add(maxY);
 
             if (app.model.lvlgen.createdTiles[i].x < minX) minX = app.model.lvlgen.createdTiles[i].x;
             if (app.model.lvlgen.createdTiles[i].x > maxX) maxX = app.model.lvlgen.createdTiles[i].x;
@@ -143,5 +165,8 @@ public class LvlGenController : Controller<Application>
     {
         parent = new GameObject().transform;
         parent.name = "LvlParent";
+
+        // Other
+        extremeYPositions = new List<float>();
     }
 }

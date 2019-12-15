@@ -216,6 +216,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6368657171747835794, guid: b997d192b18e043c3b13331ea01d224a,
         type: 3}
+    - target: {fileID: 493772288368991450, guid: e5b59df6cddc4406eb097ac46ab52736,
+        type: 3}
+      propertyPath: sceneName
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 493772288368991451, guid: e5b59df6cddc4406eb097ac46ab52736,
         type: 3}
       propertyPath: playerRB
@@ -424,7 +429,7 @@ MonoBehaviour:
     type: 3}
   hp: 100
   patrolRadius: 100
-  speed: 5
+  speed: 1
   viewingRadius: 10
   force: 5
   defence: 3
