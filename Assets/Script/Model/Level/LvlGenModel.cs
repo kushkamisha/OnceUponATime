@@ -15,6 +15,11 @@ public class LvlGenModel : Model<Application>
 
     public List<Vector3> createdTiles;
 
+    public GameObject coin;
+    public int coinsToSpawn;
+    public GameObject heart;
+    public int heartsToSpawn;
+
     public int tileAmount;
     public int tileSize = 16;
 
