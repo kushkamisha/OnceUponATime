@@ -63,7 +63,8 @@ public class GameController : Controller<Application>
             case "level":
                 type = (string)p_data[0];
                 if (type == "generate")
-                    lvlgen.GenerateLevel();
+                    // lvlgen.GenerateLevel();
+                    StartCoroutine(lvlgen.GenerateLevel());
                 break;
         }
     }

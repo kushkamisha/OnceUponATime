@@ -11,13 +11,13 @@ public class LvlGenController : Controller<Application>
     private float minX = 99999999999;
     private float maxX = 0;
 
+    private float waitTime = 0f;
+
     // Generated blocks parent folder
     private Transform parent;
 
-    public void GenerateLevel()
+    public IEnumerator GenerateLevel()
     {
-        initParentFolder();
-
         for (int i = 0; i < app.model.lvlgen.tileAmount; i++)
         {
             float direction = Random.Range(0f, 1f);
@@ -26,8 +26,12 @@ public class LvlGenController : Controller<Application>
             CreateTile(tile);
             CallMoveGen(direction);
 
+            yield return new WaitForSeconds(waitTime);
+
             if (i == app.model.lvlgen.tileAmount - 1) Finish();
         }
+
+        yield return 0;
     }
 
     void CallMoveGen(float ranDir)
@@ -94,8 +98,8 @@ public class LvlGenController : Controller<Application>
         for (int i = 0; i < app.model.lvlgen.enemyAmount; i++)
         {
             EnemyView enemy = Instantiate(app.model.lvlgen.enemy, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
-            app.model.enemy.enemyRB = enemy.GetComponent<Rigidbody2D>();
-            app.model.enemy.enemyAnim = enemy.GetComponent<Animator>();
+            // app.model.enemy.enemyRB = enemy.GetComponent<Rigidbody2D>();
+            // app.model.enemy.enemyAnim = enemy.GetComponent<Animator>();
         }
     }
 
