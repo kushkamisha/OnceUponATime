@@ -21,8 +21,6 @@ public class LvlGenModel : Model<Application>
     public float chanceRight;
     public float chanceLeft;
 
-    public float xAmount;
-    public float yAmount;
     public float extraWallX;
     public float extraWallY;
 }

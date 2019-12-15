@@ -12,12 +12,16 @@ public class LvlGenController : Controller<Application>
     private float maxX = 0;
 
     private float waitTime = 0f;
+    private float xAmount;
+    private float yAmount;
 
     // Generated blocks parent folder
     private Transform parent;
 
     public IEnumerator GenerateLevel()
     {
+        initParentFolder();
+
         for (int i = 0; i < app.model.lvlgen.tileAmount; i++)
         {
             float direction = Random.Range(0f, 1f);
@@ -25,12 +29,10 @@ public class LvlGenController : Controller<Application>
 
             CreateTile(tile);
             CallMoveGen(direction);
-
-            yield return new WaitForSeconds(waitTime);
-
-            if (i == app.model.lvlgen.tileAmount - 1) Finish();
         }
 
+        yield return new WaitForSeconds(waitTime);
+        Finish();
         yield return 0;
     }
 
@@ -115,15 +117,15 @@ public class LvlGenController : Controller<Application>
             if (app.model.lvlgen.createdTiles[i].x > maxX) maxX = app.model.lvlgen.createdTiles[i].x;
         }
 
-        app.model.lvlgen.xAmount = ((maxX - minX) / app.model.lvlgen.tileSize) + app.model.lvlgen.extraWallX * 2;
-        app.model.lvlgen.yAmount = ((maxY - minY) / app.model.lvlgen.tileSize) + app.model.lvlgen.extraWallY * 2;
+        xAmount = ((maxX - minX) / app.model.lvlgen.tileSize) + app.model.lvlgen.extraWallX * 2;
+        yAmount = ((maxY - minY) / app.model.lvlgen.tileSize) + app.model.lvlgen.extraWallY * 2;
     }
 
     void CreateWalls()
     {
-        for (int x = 0; x < app.model.lvlgen.xAmount; x++)
+        for (int x = 0; x < xAmount; x++)
         {
-            for (int y = (int)app.model.lvlgen.yAmount; y > 0; y--)
+            for (int y = (int)yAmount; y > 0; y--)
             {
                 Vector3 wallPos = new Vector3(
                     (minX - app.model.lvlgen.extraWallX * app.model.lvlgen.tileSize) + (x * app.model.lvlgen.tileSize),
