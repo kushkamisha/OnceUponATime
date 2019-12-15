@@ -37,8 +37,8 @@ public class GameController : Controller<Application>
 
             case "enemy":
                 type = (string)p_data[0];
-                if (type == "lookAround" & enemy.watchPlayer(player.getPosition()))
-                    enemy.follow(player.getPosition());
+                if (type == "action")
+                    enemy.action(player.getCreature());
                 if (type == "moveRB")
                     enemy.moveRB();
                 break;

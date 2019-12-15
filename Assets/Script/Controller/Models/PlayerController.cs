@@ -35,4 +35,9 @@ public class PlayerController : Controller<Application>
     {
         return this.player.position;
     }
+
+    public BaseCreature getCreature()
+    {
+        return this.player;
+    }
 }

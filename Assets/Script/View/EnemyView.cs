@@ -5,7 +5,7 @@ using amvcc;
 public class EnemyView : View<Application>
 {
     void Update() { 
-        app.Notify("enemy", app.controller, "lookAround");
+        app.Notify("enemy", app.controller, "action");
     }
     void FixedUpdate() { 
         Notify("enemy", "moveRB");

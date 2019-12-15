@@ -4,11 +4,13 @@ using amvcc;
 
 public class EnemyController : Model<Application>
 {
-    private CreatureAttack creature;
+    private PatrolCreature creature;
     void Start()
     {
-        this.creature = new CreatureAttack(
-            app.model.enemy.creatureRB.position, 
+        this.creature = new PatrolCreature(
+            app.model.enemy.creatureRB.position,
+            app.model.enemy.creatureRB.position,
+            app.model.enemy.patrolRadius,
             app.model.enemy.viewingRadius,
             app.model.enemy.speed,
             app.model.enemy.defence,
@@ -31,19 +33,19 @@ public class EnemyController : Model<Application>
         app.model.enemy.creatureRB.MovePosition(this.creature.position);
     }
 
-    public bool watchPlayer(Vector3 creature_position)
+    public void action(BaseCreature otherCreature)
     {
-        return this.creature.watchCreature(creature_position);
-    }
-
-    public void follow(Vector2 creature_position)
-    {
-        this.creature.follow(creature_position.x, creature_position.y);
+        this.creature.action(otherCreature);
     }
 
     public Vector2 getPosition()
     {
         return this.creature.position;
+    }
+
+    public BaseCreature getCreature()
+    {
+        return this.creature;
     }
 
 }

@@ -8,7 +8,7 @@ public class PatrolCreature : CreatureAttack
     public string state = "patrol";
     public Vector3 patrolPoint;
     public float patrolRadius;
-    private Vector2 patrolMovement = new Vector2();
+    private Vector2 patrolMovement = new Vector2(1, 1);
 
     public PatrolCreature(Vector3 position) : base(position)
     {
@@ -62,6 +62,7 @@ public class PatrolCreature : CreatureAttack
 
     public void action(BaseCreature otherCreature)
     {
+        Debug.Log(this.patrolMovement);
         switch (this.state)
         {
             case "patrol":
