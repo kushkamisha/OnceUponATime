@@ -176,9 +176,9 @@ GameObject:
   m_Component:
   - component: {fileID: 351460891}
   - component: {fileID: 351460892}
-  - component: {fileID: 351460894}
   - component: {fileID: 351460895}
   - component: {fileID: 351460893}
+  - component: {fileID: 351460894}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -224,14 +224,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd926c7f288d3054d85aceb17409eb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatureRB: {fileID: 1572762053}
-  creatureAnim: {fileID: 1572762051}
+  creatureRB: {fileID: 495534031}
+  creatureAnim: {fileID: 495534030}
   hp: 100
   speed: 4
   viewingRadius: 10
   force: 1
   defence: 0
   attackSpeed: 1
+--- !u!114 &351460894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
