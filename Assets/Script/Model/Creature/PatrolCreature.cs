@@ -66,10 +66,9 @@ public class PatrolCreature : CreatureAttack
         switch (this.state)
         {
             case "patrol":
-                if (this.watchCreature(otherCreature.position)){
+                if (this.watchCreature(otherCreature.position) & !this.isFarFromPatrolPoint()){
                     this.state = "following";
-                }
-                else
+                }else
                 {
                     this.patrol();
                 }
