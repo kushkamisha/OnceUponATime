@@ -9,8 +9,8 @@ public class GameModel : Model<Application>
     public PlayerModel player { get { return m_player = Assert<PlayerModel>(m_player); } }
     private PlayerModel m_player;
 
-    public EnemyModel enemy { get { return m_enemy = Assert<EnemyModel>(m_enemy); } }
-    private EnemyModel m_enemy;
+    public Orc1Model enemy { get { return m_enemy = Assert<Orc1Model>(m_enemy); } }
+    private Orc1Model m_enemy;
 
     // Reference to the Camera model
     public CameraModel mainCamera { get { return m_mainCamera = Assert<CameraModel>(m_mainCamera); } }

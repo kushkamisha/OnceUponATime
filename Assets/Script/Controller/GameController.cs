@@ -5,8 +5,6 @@ using amvcc;
 // Contains all controllers related to the app
 public class GameController : Controller<Application>
 {
-
-    private Vector3 offset;
     // Reference to the Player controller
     public PlayerController player { get { return m_player = Assert<PlayerController>(m_player); } }
     private PlayerController m_player;
@@ -31,23 +29,24 @@ public class GameController : Controller<Application>
     {
         string type;
 
-        switch(p_event)
+        switch (p_event)
         {
-            case "player.move":
+            case "player":
                 type = (string)p_data[0];
-                if (type == "player")
-                    player.movePlayer();
-                else if (type == "rb")
+                if (type == "move")
+                    player.move();
+                else if (type == "moveRB")
                     player.moveRB();
                 break;
-            case "enemy.look_around":
+
+            case "enemy":
                 type = (string)p_data[0];
-                Vector3 playerPosition = app.model.player.playerRB.position;
-                if (type == "enemy" & enemy.watchPlayer(playerPosition))
-                    enemy.follow((float)playerPosition[0], (float)playerPosition[1]);
-                if (type == "rb")
+                if (type == "action")
+                    enemy.action(player.getCreature());
+                if (type == "moveRB")
                     enemy.moveRB();
                 break;
+
             case "camera":
                 type = (string)p_data[0];
                 if (type == "init")
@@ -57,6 +56,7 @@ public class GameController : Controller<Application>
 
                 break;
             case "level door":
+
                 Collider2D col = (Collider2D)p_data[0];
                 level.loadScene(col);
                 break;
