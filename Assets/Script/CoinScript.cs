@@ -5,21 +5,9 @@ using amvcc;
 
 public class CoinScript : Controller<Application>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Player")
+        if (other.gameObject.tag == "Player")
         {
             PlayerController.coin_points++;
             Destroy(gameObject);

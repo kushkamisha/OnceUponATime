@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 691005339}
   - component: {fileID: 691005340}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2922,7 +2922,7 @@ GameObject:
   - component: {fileID: 1678258747}
   - component: {fileID: 1678258748}
   m_Layer: 0
-  m_Name: helthrect
+  m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3174,7 +3174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eadc086cfdda84c569755f0d08e8c791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imahe: {fileID: 2800000, guid: 03b3b03d94fe64ca991436d28accda10, type: 3}
 --- !u!1001 &1728516034
 PrefabInstance:
   m_ObjectHideFlags: 0

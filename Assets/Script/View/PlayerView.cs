@@ -4,8 +4,6 @@ using amvcc;
 
 public class PlayerView : View<Application>
 {
-    public Texture imahe;
-
     void Start() 
     { 
         app.Notify("player.startPosHealth", app.controller, "startHealth");

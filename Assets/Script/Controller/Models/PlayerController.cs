@@ -17,6 +17,7 @@ public class PlayerController : Controller<Application>
             app.model.player.force,
             app.model.player.attackSpeed
             );
+        app.model.player.creatureRB.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void move()
@@ -74,7 +75,17 @@ public class PlayerController : Controller<Application>
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20), "Coins : " + coin_points);
-        //GUI.Box(new Rect(10, 10, 50, 50), app.view.player.imahe, " " + coin_points);
+        GUIStyle style = new GUIStyle();
+
+        // Load and set Font
+        Font myFont = (Font)Resources.Load("Fonts/ThaleahFat_TTF", typeof(Font));
+        style.font = myFont;
+        style.fontSize = 80;
+
+        // Set color for selected and unselected buttons
+        style.normal.textColor = Color.yellow;
+        // myButtonStyle.hover.textColor = Color.red;
+
+        GUI.Label(new Rect(40, 10, 100, 20), "Coins : " + coin_points, style);
     }
 }
