@@ -17,6 +17,7 @@ public class PlayerController : Controller<Application>
             app.model.player.force,
             app.model.player.attackSpeed
             );
+        app.model.player.creatureRB.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void move()
