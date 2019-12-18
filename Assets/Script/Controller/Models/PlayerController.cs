@@ -22,6 +22,11 @@ public class PlayerController : Controller<Application>
 
     public void move()
     {
+        Debug.Log(this.player.hp);
+        if (this.player.hp <= 0)
+        {
+            Destroy(gameObject);
+        }
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
@@ -33,7 +38,8 @@ public class PlayerController : Controller<Application>
 
     public void moveRB()
     {
-        app.model.player.creatureRB.MovePosition(this.player.position);
+        app.model.player.creatureRB.MovePosition(app.model.player.creatureRB.position + this.player.movement * this.player.speed * Time.fixedDeltaTime);
+        this.player.position = app.model.player.creatureRB.position;
     }
 
     public Vector2 getPosition()
@@ -58,19 +64,6 @@ public class PlayerController : Controller<Application>
             app.model.player.creatureAnim.SetBool("isNotKick", true);
             app.model.player.creatureAnim.SetBool("isKick", false);
         }
-        
-        //app.model.player.playerAnim.SetBool("isKick", false);
-    }
-
-    public void decreaseHP()
-    {
-        if (this.player.hp <= 0)
-            Destroy(gameObject);
-    }
-
-    public float getHP(){
-        // return this.player.hp;
-        return 0.12159f;
     }
 
     private void OnGUI()

@@ -1,27 +1,26 @@
 ﻿using UnityEngine;
 using System;
-using System.Collections;
 
 public class BaseCreature
 {
-    public Vector3 movement;
-    public Vector3 position;
+    public Vector2 movement;
+    public Vector2 position;
     public virtual float speed { get; set; }
     public virtual float viewingRadius { get; set; }
     public float hp { get; set; }
 
-    public BaseCreature(Vector3 position)
+    public BaseCreature(Vector2 position)
     {
-        this.movement = new Vector3(0, 0, 0);
+        this.movement = new Vector2(0, 0);
         this.hp = 100f;
         this.position = position;
         this.speed = 2f;
         this.viewingRadius = 10f;
     }
 
-    public BaseCreature(Vector3 position, float hp, float speed, float viewingRadius)
+    public BaseCreature(Vector2 position, float hp, float speed, float viewingRadius)
     {
-        this.movement = new Vector3(0, 0, 0);
+        this.movement = new Vector2(0, 0);
         this.hp = hp;
         this.position = position;
         this.speed = speed;
@@ -32,7 +31,6 @@ public class BaseCreature
     {
         this.movement.x = x;
         this.movement.y = y;
-        this.position = this.position + this.movement * this.speed * Time.fixedDeltaTime;
     }
 
     public void follow(float x, float y)
@@ -49,16 +47,22 @@ public class BaseCreature
 
     public bool watchCreature(Vector3 creature_position)
     {
-        if (Math.Pow(Math.Pow(this.position.x - creature_position.x, 2) + Math.Pow(this.position.y - creature_position.y, 2), 0.5) < this.viewingRadius)
+        return this.checkCloseToObject(creature_position, this.viewingRadius);
+    }
+
+    public bool checkCloseToObject(Vector3 creature_position, float radius)
+    {
+        if (Math.Pow(Math.Pow(this.position.x - creature_position.x, 2) + Math.Pow(this.position.y - creature_position.y, 2), 0.5) < radius)
         {
             return true;
-;        }
+            ;
+        }
         return false;
     }
 
     public void decreaseHP(float value)
     {
-        this.hp = this.hp - value;
+        this.hp = this.hp - value;        
     }
 
 }

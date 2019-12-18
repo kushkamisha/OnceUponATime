@@ -5,10 +5,6 @@ using amvcc;
 public class EnemyController : Model<Application>
 {
     private List<PatrolCreature> creatures = new List<PatrolCreature>();
-    void Start()
-    {
-        
-    }
 
     public void createEnemies()
     {
@@ -16,6 +12,7 @@ public class EnemyController : Model<Application>
         {
             this.creatures.Add(new PatrolCreature(
                 app.model.enemies[i].creatureRB.position,
+                app.model.enemies[i].circleSize,
                 app.model.enemies[i].creatureRB.position,
                 app.model.enemies[i].patrolRadius,
                 app.model.enemies[i].viewingRadius,
@@ -23,7 +20,7 @@ public class EnemyController : Model<Application>
                 app.model.enemies[i].defence,
                 app.model.enemies[i].force,
                 app.model.enemies[i].attackSpeed
-            ));
+            ));;
         }
     }
 
@@ -38,7 +35,8 @@ public class EnemyController : Model<Application>
 
     public void moveRB(int enemyIndex)
     {
-        app.model.enemies[enemyIndex].creatureRB.MovePosition(this.creatures[enemyIndex].position);
+        app.model.enemies[enemyIndex].creatureRB.MovePosition(app.model.enemies[enemyIndex].creatureRB.position + this.creatures[enemyIndex].movement * this.creatures[enemyIndex].speed * Time.fixedDeltaTime);
+        this.creatures[enemyIndex].position = app.model.enemies[enemyIndex].creatureRB.position;
     }
 
     public void moveRB()
@@ -70,6 +68,15 @@ public class EnemyController : Model<Application>
     public BaseCreature getCreature(int enemyIndex)
     {
         return this.creatures[enemyIndex];
+    }
+
+    void OnTriggerEnter2D(Collider2D otherCreature)
+    {
+        if (otherCreature.gameObject.tag == "Player")
+        {
+            Debug.Log(this.creatures[0].state);
+        }
+        
     }
 
 }

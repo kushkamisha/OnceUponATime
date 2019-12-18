@@ -12,16 +12,9 @@ public class PlayerView : View<Application>
     void Update() { 
         app.Notify("player", app.controller, "move");
         app.Notify("player", app.controller, "kicking");
-        app.Notify("player", app.controller, "decrHealth");
+        app.Notify("player", app.controller, "startPosHealth");
     }
     void FixedUpdate() { 
         Notify("player", "moveRB");
-    }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.name.Equals("Enemy"))
-            Debug.Log("Killed");
-            // PlayerController.healthAmount -= 0.01f;
     }
 }
