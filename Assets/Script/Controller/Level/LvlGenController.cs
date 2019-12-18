@@ -129,11 +129,11 @@ public class LvlGenController : Controller<Application>
         for (int i = 0; i < app.model.lvlgen.enemyAmount; i++)
         {
             // app.model.lvlgen.enemies.Add(app.view.enemy);
-            EnemyView enemyView = Instantiate(app.model.lvlgen.enemy, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
-            app.model.lvlgen.enemies.Add(enemyView);
-            app.model.createOrc1Model();
-            app.model.enemies[app.model.enemies.Count-1].creatureRB = app.model.lvlgen.enemies[app.model.lvlgen.enemies.Count-1].GetComponent<Rigidbody2D>();
-            app.model.enemies[app.model.enemies.Count-1].creatureAnim = app.model.lvlgen.enemies[app.model.lvlgen.enemies.Count-1].GetComponent<Animator>();
+                EnemyView enemyView = Instantiate(app.model.lvlgen.enemy, app.model.lvlgen.createdTiles[Random.Range(0, app.model.lvlgen.createdTiles.Count)], Quaternion.identity);
+                app.model.lvlgen.enemies.Add(enemyView);
+                app.model.createOrc1Model();
+                app.model.enemies[app.model.enemies.Count-1].creatureRB = app.model.lvlgen.enemies[app.model.lvlgen.enemies.Count-1].GetComponent<Rigidbody2D>();
+                app.model.enemies[app.model.enemies.Count-1].creatureAnim = app.model.lvlgen.enemies[app.model.lvlgen.enemies.Count-1].GetComponent<Animator>();
         }
     }
 
