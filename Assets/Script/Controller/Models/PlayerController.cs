@@ -22,6 +22,7 @@ public class PlayerController : Controller<Application>
 
     public void move()
     {
+        Debug.Log(this.player.hp);
         if (this.player.hp <= 0)
         {
             Destroy(gameObject);
@@ -63,11 +64,6 @@ public class PlayerController : Controller<Application>
             app.model.player.creatureAnim.SetBool("isNotKick", true);
             app.model.player.creatureAnim.SetBool("isKick", false);
         }
-    }
-
-    public float getHP()
-    {
-        return this.player.hp;
     }
 
     private void OnGUI()

@@ -5,29 +5,15 @@ using amvcc;
 
 public class HeartScript : Controller<Application>
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            float value = app.controller.player.getHP();
-            if (value < 0.12159f) 
+            if (app.controller.player.getCreature().hp < 100) 
             {
-                Debug.Log("Hp increase");
-                // PlayerController.healthAmount += 0.01f;
+                app.controller.player.getCreature().hp += 10f;
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
     }
 }
