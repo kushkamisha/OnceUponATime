@@ -62,7 +62,6 @@ public class PatrolCreature : CreatureAttack
 
     public void action(BaseCreature otherCreature)
     {
-        Debug.Log(this.patrolMovement);
         switch (this.state)
         {
             case "patrol":
