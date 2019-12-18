@@ -56,6 +56,7 @@ public class GameController : Controller<Application>
 
             case "enemy":
                 type = (string)p_data[0];
+                
                 if (type == "action")
                     enemy.action(player.getCreature());
                 if (type == "moveRB")
