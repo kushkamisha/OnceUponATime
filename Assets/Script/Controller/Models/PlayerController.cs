@@ -6,6 +6,7 @@ public class PlayerController : Controller<Application>
     private CreatureAttack player;
     public static int coin_points = 0;
     private Constants constants = new Constants();
+    private string direction = "down";
 
     private Vector2 mousePos;
 
@@ -37,18 +38,10 @@ public class PlayerController : Controller<Application>
         app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
         app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            app.model.player.creatureAnim.SetBool("attack", true);
-            app.model.player.creatureAnim.SetBool("nattack", false);
-            app.model.enemy.hp -= 10f;
-            Debug.Log("Enemy HP: "+app.model.enemy.hp);
-        }
-        else
-        {
-            app.model.player.creatureAnim.SetBool("attack", false);
-            app.model.player.creatureAnim.SetBool("nattack", true);
-        }
+        if (this.player.movement.x == 1) direction = "right";
+        else if (this.player.movement.x == -1) direction = "left";
+        else if (this.player.movement.y == 1) direction = "up";
+        else if (this.player.movement.y == -1) direction = "down";
     }
 
     public void moveRB()
@@ -83,15 +76,38 @@ public class PlayerController : Controller<Application>
 
     public void kickingPlayer()
     {
-        //app.model.player.kickPlayer = GetComponent<Animator>();
-        if (Input.GetKey(KeyCode.Space))
+        // if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
+
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            app.model.player.creatureAnim.SetBool("isKick", true);
-            app.model.player.creatureAnim.SetBool("isNotKick", false);
-        } else
+            switch (direction) {
+                case "right":
+                    app.model.player.creatureAnim.SetBool("AttackRight", true);
+                    break;
+                case "left":
+                    app.model.player.creatureAnim.SetBool("AttackLeft", true); 
+                    break;
+                case "up":
+                    app.model.player.creatureAnim.SetBool("AttackBack", true);
+                    break;
+                case "down":
+                    app.model.player.creatureAnim.SetBool("AttackFront", true);
+                    break;
+            }
+
+            app.model.player.creatureAnim.SetBool("Idle", false);
+            app.model.enemy.hp -= 10f;
+            Debug.Log("Enemy HP: "+app.model.enemy.hp);
+        }
+        else
         {
-            app.model.player.creatureAnim.SetBool("isNotKick", true);
-            app.model.player.creatureAnim.SetBool("isKick", false);
+            app.model.player.creatureAnim.SetBool("AttackRight", false);
+            app.model.player.creatureAnim.SetBool("AttackLeft", false);
+            app.model.player.creatureAnim.SetBool("AttackBack", false);
+            app.model.player.creatureAnim.SetBool("AttackFront", false);
+
+            app.model.player.creatureAnim.SetBool("Idle", true);
+            // app.model.player.creatureAnim.Play("Player", -1, 0f);
         }
     }
 
