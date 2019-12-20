@@ -38,12 +38,6 @@ public class PlayerController : Controller<Application>
         if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackBack")) return;
         if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
 
-        this.player.move(x, y);
-
-        app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
-        app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
-        app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
-
         if (this.player.movement.x == 1) {
             direction = "right";
         } else if (this.player.movement.x == -1) {
@@ -70,6 +64,12 @@ public class PlayerController : Controller<Application>
                     break;  
             }
         }
+
+        this.player.move(x, y);
+
+        app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
+        app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
+        app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
     }
 
     public void moveRB()
