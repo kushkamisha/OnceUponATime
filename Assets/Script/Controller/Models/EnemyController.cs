@@ -74,6 +74,7 @@ public class EnemyController : Model<Application>
     {
         if (otherCreature.gameObject.tag == "Player")
         {
+            Debug.Log("AZAZA");
             Debug.Log(this.creatures[0].state);
         }
         

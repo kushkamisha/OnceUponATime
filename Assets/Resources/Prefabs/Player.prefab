@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &4678472653857234856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477112730770754530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54bbbbd910138b4eaf3eebe9a2b4398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2306249648480489057
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,18 +103,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &4678472653857234856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477112730770754530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54bbbbd910138b4eaf3eebe9a2b4398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3561678475199145184
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +340,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924250728305373305, guid: 5487fa8a1a3be0141927a788892f9d46,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.19579513
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924250728305373305, guid: 5487fa8a1a3be0141927a788892f9d46,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 6924250728305373305, guid: 5487fa8a1a3be0141927a788892f9d46,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.09019609
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5487fa8a1a3be0141927a788892f9d46, type: 3}

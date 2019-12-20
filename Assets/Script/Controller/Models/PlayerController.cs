@@ -5,6 +5,7 @@ public class PlayerController : Controller<Application>
 {
     private CreatureAttack player;
     public static int coin_points = 0;
+    private Constants constants = new Constants();
 
     private Vector2 mousePos;
 
@@ -23,6 +24,7 @@ public class PlayerController : Controller<Application>
     public void move()
     {
         Debug.Log(this.player.hp);
+ 
         if (this.player.hp <= 0)
         {
             Destroy(gameObject);
@@ -34,6 +36,19 @@ public class PlayerController : Controller<Application>
         app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
         app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
         app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            app.model.player.creatureAnim.SetBool("attack", true);
+            app.model.player.creatureAnim.SetBool("nattack", false);
+            app.model.enemy.hp -= 10f;
+            Debug.Log("Enemy HP: "+app.model.enemy.hp);
+        }
+        else
+        {
+            app.model.player.creatureAnim.SetBool("attack", false);
+            app.model.player.creatureAnim.SetBool("nattack", true);
+        }
     }
 
     public void moveRB()
@@ -50,6 +65,20 @@ public class PlayerController : Controller<Application>
     public BaseCreature getCreature()
     {
         return this.player;
+    }
+
+    public void decreasingHP()
+    {
+        Debug.Log("SS");
+        app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
+        app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
+        /*Debug.Log("WHYYYY");
+        if (player.hp < 100)
+        {
+            Debug.Log("YESSSS");
+            //app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
+            //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
+        }*/
     }
 
     public void kickingPlayer()
