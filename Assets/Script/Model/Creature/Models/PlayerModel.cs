@@ -11,4 +11,5 @@ public class PlayerModel : Model<Application>
     public float force = 1f;
     public float defence = 0f;
     public int attackSpeed = 50;
+    public GameObject hpimg;
 }

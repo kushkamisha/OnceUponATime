@@ -705,6 +705,7 @@ MonoBehaviour:
   force: 1
   defence: 0
   attackSpeed: 50
+  hpimg: {fileID: 4004392956213329608, guid: 5487fa8a1a3be0141927a788892f9d46, type: 3}
 --- !u!4 &1166774525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6744518721390505384, guid: c56a8899c932d4b2995896da02759282,
