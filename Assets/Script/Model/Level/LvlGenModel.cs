@@ -6,6 +6,7 @@ using amvcc;
 public class LvlGenModel : Model<Application>
 {
     public PlayerView player;
+    public List<EnemyView> enemies = new List<EnemyView>();
     public EnemyView enemy;
     public int defaultEnemyAmount = 3;
     public int enemyAmount = 3;

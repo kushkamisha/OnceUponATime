@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using amvcc;
 
 // Contains all models related to the app
@@ -11,6 +11,13 @@ public class GameModel : Model<Application>
 
     public Orc1Model enemy { get { return m_enemy = Assert<Orc1Model>(m_enemy); } }
     private Orc1Model m_enemy;
+
+    public List<Orc1Model> enemies = new List<Orc1Model>();
+    public Orc1Model createOrc1Model()
+    {
+        this.enemies.Add(Instantiate(app.model.enemy));
+        return this.enemies[this.enemies.Count-1];
+    }
 
     // Reference to the Camera model
     public CameraModel mainCamera { get { return m_mainCamera = Assert<CameraModel>(m_mainCamera); } }

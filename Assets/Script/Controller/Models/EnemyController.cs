@@ -1,51 +1,82 @@
 ﻿using UnityEngine;
-using System;
+using System.Collections.Generic;
 using amvcc;
 
 public class EnemyController : Model<Application>
 {
-    private PatrolCreature creature;
-    void Start()
+    private List<PatrolCreature> creatures = new List<PatrolCreature>();
+
+    public void createEnemies()
     {
-        this.creature = new PatrolCreature(
-            app.model.enemy.creatureRB.position,
-            app.model.enemy.creatureRB.position,
-            app.model.enemy.patrolRadius,
-            app.model.enemy.viewingRadius,
-            app.model.enemy.speed,
-            app.model.enemy.defence,
-            app.model.enemy.force,
-            app.model.enemy.attackSpeed
-        );
+        for (int i = 0; i < app.model.enemies.Count; i++)
+        {
+            this.creatures.Add(new PatrolCreature(
+                app.model.enemies[i].creatureRB.position,
+                app.model.enemies[i].circleSize,
+                app.model.enemies[i].creatureRB.position,
+                app.model.enemies[i].patrolRadius,
+                app.model.enemies[i].viewingRadius,
+                app.model.enemies[i].speed,
+                app.model.enemies[i].defence,
+                app.model.enemies[i].force,
+                app.model.enemies[i].attackSpeed
+            ));;
+        }
     }
 
-    public void move(float x, float y)
+    public void move(int enemyIndex, float x, float y)
     {
-        this.creature.move(x, y);
+        this.creatures[enemyIndex].move(x, y);
 
         /*app.model.enemy.creatureAnim.SetFloat("Horizontal", this.creature.movement.x);
         app.model.enemy.creatureAnim.SetFloat("Vertical", this.creature.movement.y);
         app.model.enemy.creatureAnim.SetFloat("Speed", this.creature.movement.sqrMagnitude);*/
     }
 
+    public void moveRB(int enemyIndex)
+    {
+        app.model.enemies[enemyIndex].creatureRB.MovePosition(app.model.enemies[enemyIndex].creatureRB.position + this.creatures[enemyIndex].movement * this.creatures[enemyIndex].speed * Time.fixedDeltaTime);
+        this.creatures[enemyIndex].position = app.model.enemies[enemyIndex].creatureRB.position;
+    }
+
     public void moveRB()
     {
-        app.model.enemy.creatureRB.MovePosition(this.creature.position);
+        for (int i = 0; i < this.creatures.Count; i++)
+        {
+            this.moveRB(i);
+        }
+    }
+
+    public void action(int enemyIndex, BaseCreature otherCreature)
+    {
+        this.creatures[enemyIndex].action(otherCreature);
     }
 
     public void action(BaseCreature otherCreature)
     {
-        this.creature.action(otherCreature);
+        for (int i = 0; i < this.creatures.Count; i++)
+        {
+            this.action(i, otherCreature);
+        }
     }
 
-    public Vector2 getPosition()
+    public Vector2 getPosition(int enemyIndex)
     {
-        return this.creature.position;
+        return this.creatures[enemyIndex].position;
     }
 
-    public BaseCreature getCreature()
+    public BaseCreature getCreature(int enemyIndex)
     {
-        return this.creature;
+        return this.creatures[enemyIndex];
+    }
+
+    void OnTriggerEnter2D(Collider2D otherCreature)
+    {
+        if (otherCreature.gameObject.tag == "Player")
+        {
+            Debug.Log(this.creatures[0].state);
+        }
+        
     }
 
 }

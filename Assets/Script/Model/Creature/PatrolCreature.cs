@@ -9,6 +9,7 @@ public class PatrolCreature : CreatureAttack
     public Vector3 patrolPoint;
     public float patrolRadius;
     private Vector2 patrolMovement = new Vector2(1, 1);
+    public float circleSize;
 
     public PatrolCreature(Vector3 position) : base(position)
     {
@@ -17,6 +18,7 @@ public class PatrolCreature : CreatureAttack
     }
 
     public PatrolCreature(Vector3 position,
+        float circleSize,
         Vector3 patrolPoint,
         float patrolRadius,
         float viewingRadius,
@@ -28,6 +30,7 @@ public class PatrolCreature : CreatureAttack
     {
         this.patrolPoint = patrolPoint;
         this.patrolRadius = patrolRadius;
+        this.circleSize = circleSize;
     }
 
     private void patrol()
@@ -54,15 +57,14 @@ public class PatrolCreature : CreatureAttack
         return !this.watchCreature(this.patrolPoint);
     }
 
-    private bool canAttack()
+    private bool canAttack(Vector3 otherCreature)
     {
-        /* Kill or just delete me please!!! */
-        return false;
+        return this.checkCloseToObject(otherCreature, this.circleSize);
     }
 
     public void action(BaseCreature otherCreature)
     {
-        Debug.Log(this.patrolMovement);
+        Debug.Log(this.state);
         switch (this.state)
         {
             case "patrol":
@@ -77,7 +79,7 @@ public class PatrolCreature : CreatureAttack
                 if (this.isFarFromPatrolPoint()){
                     this.state = "patrol";
                 }
-                else if (this.canAttack()){
+                else if (this.canAttack(otherCreature.position)){
                     this.state = "fight";
                 }
                 else if (this.watchCreature(otherCreature.position))
@@ -90,14 +92,16 @@ public class PatrolCreature : CreatureAttack
                 }
                 break;
             case "fight":
-                if (!this.canAttack())
+                if (!this.canAttack(otherCreature.position))
                 {
                     this.state = "following";
                 }
                 else
                 {
+                    this.movement = new Vector2(0, 0);
                     float damage = this.attack();
-                    otherCreature.decreaseHP(damage);
+                    if (damage > 0)
+                        otherCreature.decreaseHP(damage);
                 }
                 break;
 
