@@ -94,8 +94,8 @@ public class PlayerController : Controller<Application>
             }
 
             app.model.player.creatureAnim.SetBool("Idle", false);
-            app.model.enemy.hp -= 10f;
-            Debug.Log("Enemy HP: "+app.model.enemy.hp);
+            //app.model.enemy.hp -= 10f;
+            //Debug.Log("Enemy HP: "+app.model.enemy.hp);
         }
         else
         {
@@ -125,12 +125,12 @@ public class PlayerController : Controller<Application>
         GUI.Label(new Rect(40, 10, 100, 20), "Coins : " + coin_points, style);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    /*void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Enemy"))
         {
             app.model.enemy.hp -= 10f;
             Debug.Log("Enemy HP: " + app.model.enemy.hp);
         }
-    }
+    }*/
 }
