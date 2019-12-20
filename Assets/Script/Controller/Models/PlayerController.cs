@@ -33,15 +33,43 @@ public class PlayerController : Controller<Application>
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackRight")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackLeft")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackBack")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
+
+        if (this.player.movement.x == 1) {
+            direction = "right";
+        } else if (this.player.movement.x == -1) {
+            direction = "left";
+        } else if (this.player.movement.y == 1) {
+            direction = "up";
+        } else if (this.player.movement.y == -1) {
+            direction = "down";
+        }
+
+        if (this.player.movement.x == 0 && this.player.movement.y == 0) {
+            switch(direction) {
+                case "right":
+                    app.model.player.creatureAnim.Play("IdleRight");
+                    break;
+                case "left":
+                    app.model.player.creatureAnim.Play("IdleLeft");
+                    break;
+                case "up":
+                    app.model.player.creatureAnim.Play("IdleBack");
+                    break;
+                case "down":
+                    app.model.player.creatureAnim.Play("IdleFront");
+                    break;  
+            }
+        }
+
         this.player.move(x, y);
+
         app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
         app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
         app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
-
-        if (this.player.movement.x == 1) direction = "right";
-        else if (this.player.movement.x == -1) direction = "left";
-        else if (this.player.movement.y == 1) direction = "up";
-        else if (this.player.movement.y == -1) direction = "down";
     }
 
     public void moveRB()
@@ -50,18 +78,13 @@ public class PlayerController : Controller<Application>
         this.player.position = app.model.player.creatureRB.position;
     }
 
-    public Vector2 getPosition()
-    {
-        return this.player.position;
-    }
+    public Vector2 getPosition() { return this.player.position; }
 
-    public BaseCreature getCreature()
-    {
-        return this.player;
-    }
+    public BaseCreature getCreature() { return this.player; }
 
     /*public void decreasingHP()
     {
+<<<<<<< HEAD
         //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
         Debug.Log("WHYYYY");
         if (player.hp < 100)
@@ -71,41 +94,30 @@ public class PlayerController : Controller<Application>
             app.controller.healthBar.transform.localScale = new Vector3(app.controller.healthBar.localScale.x,0.01048f,0.39110f);
         }
     }*/
+=======
+        Debug.Log("SS");
+        app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
+        app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
+    }
+>>>>>>> attack
 
-    public void kickingPlayer()
-    {
-        // if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
-
-        if(Input.GetKeyDown(KeyCode.Space))
+    public void kickingPlayer() {
+        if (Input.GetKey(KeyCode.Space) && this.player.movement.x == 0 && this.player.movement.y == 0)
         {
-            switch (direction) {
+            switch(direction) {
                 case "right":
-                    app.model.player.creatureAnim.SetBool("AttackRight", true);
+                    app.model.player.creatureAnim.Play("AttackRight");
                     break;
                 case "left":
-                    app.model.player.creatureAnim.SetBool("AttackLeft", true); 
+                    app.model.player.creatureAnim.Play("AttackLeft");
                     break;
                 case "up":
-                    app.model.player.creatureAnim.SetBool("AttackBack", true);
+                    app.model.player.creatureAnim.Play("AttackBack");
                     break;
                 case "down":
-                    app.model.player.creatureAnim.SetBool("AttackFront", true);
-                    break;
+                    app.model.player.creatureAnim.Play("AttackFront");
+                    break;  
             }
-
-            app.model.player.creatureAnim.SetBool("Idle", false);
-            app.model.enemy.hp -= 10f;
-            Debug.Log("Enemy HP: "+app.model.enemy.hp);
-        }
-        else
-        {
-            app.model.player.creatureAnim.SetBool("AttackRight", false);
-            app.model.player.creatureAnim.SetBool("AttackLeft", false);
-            app.model.player.creatureAnim.SetBool("AttackBack", false);
-            app.model.player.creatureAnim.SetBool("AttackFront", false);
-
-            app.model.player.creatureAnim.SetBool("Idle", true);
-            // app.model.player.creatureAnim.Play("Player", -1, 0f);
         }
     }
 
