@@ -26,7 +26,7 @@ public class SwordTrigger : Controller<Application>
             if (gameObject.activeSelf)
             {
                 collision.gameObject.SetActive(false);
-                Destroy(collision.gameObject);
+                Destroy(GameObject.Find(collision.gameObject.name+"(Clone)"));
             }
         }
     }
