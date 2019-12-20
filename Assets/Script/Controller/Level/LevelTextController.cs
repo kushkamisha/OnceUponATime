@@ -11,9 +11,9 @@ public class LevelTextController : Controller<Application>
     void Update()
     {
         // Total shit! Must be replaced more smart!
-        if (app.controller.player.getCreature().hp <= 0)
+        if (app.controller.player.getCreature().hp < 0)
         {
-            this.gameOver();
+            gameOver();
         }
     }
     public void SetText()

@@ -29,6 +29,9 @@ public class GameController : Controller<Application>
     public LevelTextController lvltext { get { return m_lvltext = Assert<LevelTextController>(m_lvltext); } }
     private LevelTextController m_lvltext;
 
+    public HealthBar healthBar { get { return m_healthBar = Assert<HealthBar>(m_healthBar); } }
+    private HealthBar m_healthBar;
+
     public override void OnNotification(string p_event, Object p_target, params object[] p_data)
     {
         string type;
@@ -48,6 +51,8 @@ public class GameController : Controller<Application>
                     // player.startPosHealth();
                     //Debug.Log("Start Pos Health");
                 }
+                else if (type == "decrease")
+                    player.decreasingHP();
                 break;
 
             case "enemy":
