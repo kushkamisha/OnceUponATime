@@ -132,6 +132,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot
       objectReference: {fileID: 0}
+    - target: {fileID: 9007095018756206780, guid: 497fc85d2ba1bc145b48e0626d657025,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007095018756206780, guid: 497fc85d2ba1bc145b48e0626d657025,
+        type: 3}
+      propertyPath: m_Name
+      value: InventorySlot
+      objectReference: {fileID: 0}
     - target: {fileID: 9007095020084037144, guid: 497fc85d2ba1bc145b48e0626d657025,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3579,6 +3589,7 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c6de6ccb461b6544fb734443fbf2a903, type: 2}
+    m_RemovedComponents: []
     - target: {fileID: 1699967939700979525, guid: b997d192b18e043c3b13331ea01d224a,
         type: 3}
       propertyPath: m_IsTrigger

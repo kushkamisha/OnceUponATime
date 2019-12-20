@@ -179,6 +179,9 @@ public class LvlGenController : Controller<Application>
         parent = new GameObject().transform;
         parent.name = "LvlParent";
 
+        Light directLight = parent.gameObject.AddComponent<Light>();
+        directLight.intensity = 0.25f;
+        directLight.type = LightType.Directional;
         // Other
         extremeYPositions = new List<float>();
     }
