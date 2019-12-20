@@ -36,19 +36,6 @@ public class PlayerController : Controller<Application>
         app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
         app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
         app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            app.model.player.creatureAnim.SetBool("attack", true);
-            app.model.player.creatureAnim.SetBool("nattack", false);
-            app.model.enemy.hp -= 10f;
-            Debug.Log("Enemy HP: "+app.model.enemy.hp);
-        }
-        else
-        {
-            app.model.player.creatureAnim.SetBool("attack", false);
-            app.model.player.creatureAnim.SetBool("nattack", true);
-        }
     }
 
     public void moveRB()
@@ -67,31 +54,29 @@ public class PlayerController : Controller<Application>
         return this.player;
     }
 
-    public void decreasingHP()
+    /*public void decreasingHP()
     {
-        Debug.Log("SS");
-        app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
-        app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
-        /*Debug.Log("WHYYYY");
+        //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
+        Debug.Log("WHYYYY");
         if (player.hp < 100)
         {
             Debug.Log("YESSSS");
-            //app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
-            //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
-        }*/
-    }
+            app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
+            app.controller.healthBar.transform.localScale = new Vector3(app.controller.healthBar.localScale.x,0.01048f,0.39110f);
+        }
+    }*/
 
     public void kickingPlayer()
     {
-        //app.model.player.kickPlayer = GetComponent<Animator>();
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            app.model.player.creatureAnim.SetBool("isKick", true);
-            app.model.player.creatureAnim.SetBool("isNotKick", false);
-        } else
+            app.model.player.creatureAnim.SetBool("attack", true);
+            app.model.player.creatureAnim.SetBool("nattack", false);
+        }
+        else
         {
-            app.model.player.creatureAnim.SetBool("isNotKick", true);
-            app.model.player.creatureAnim.SetBool("isKick", false);
+            app.model.player.creatureAnim.SetBool("attack", false);
+            app.model.player.creatureAnim.SetBool("nattack", true);
         }
     }
 
@@ -109,5 +94,14 @@ public class PlayerController : Controller<Application>
         // myButtonStyle.hover.textColor = Color.red;
 
         GUI.Label(new Rect(40, 10, 100, 20), "Coins : " + coin_points, style);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Equals("Enemy"))
+        {
+            app.model.enemy.hp -= 10f;
+            Debug.Log("Enemy HP: " + app.model.enemy.hp);
+        }
     }
 }

@@ -72,7 +72,7 @@ public class EnemyController : Model<Application>
 
     void OnTriggerEnter2D(Collider2D otherCreature)
     {
-        if (otherCreature.gameObject.tag == "Player")
+        if (otherCreature.gameObject.tag.Equals("Player"))
         {
             Debug.Log("AZAZA");
             Debug.Log(this.creatures[0].state);
