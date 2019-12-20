@@ -17,7 +17,10 @@ public class HealthBar : Controller<Application>
 
     /*void Update()
     {
-        localScale.x = app.controller.player.getCreature().hp / constants.hpCoef;
-        transform.localScale = localScale;
+        if (app.controller.player.getCreature().hp < 100)
+        {
+            localScale.x = app.controller.player.getCreature().hp / constants.hpCoef;
+            transform.localScale = localScale;
+        }
     }*/
 }

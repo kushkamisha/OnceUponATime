@@ -60,19 +60,17 @@ public class PlayerController : Controller<Application>
         return this.player;
     }
 
-    public void decreasingHP()
+    /*public void decreasingHP()
     {
-        Debug.Log("SS");
-        app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
-        app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
-        /*Debug.Log("WHYYYY");
+        //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
+        Debug.Log("WHYYYY");
         if (player.hp < 100)
         {
             Debug.Log("YESSSS");
-            //app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
-            //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
-        }*/
-    }
+            app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
+            app.controller.healthBar.transform.localScale = new Vector3(app.controller.healthBar.localScale.x,0.01048f,0.39110f);
+        }
+    }*/
 
     public void kickingPlayer()
     {
@@ -126,4 +124,13 @@ public class PlayerController : Controller<Application>
 
         GUI.Label(new Rect(40, 10, 100, 20), "Coins : " + coin_points, style);
     }
+
+    /*void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Equals("Enemy"))
+        {
+            app.model.enemy.hp -= 10f;
+            Debug.Log("Enemy HP: " + app.model.enemy.hp);
+        }
+    }*/
 }

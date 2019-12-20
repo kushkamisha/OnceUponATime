@@ -51,8 +51,8 @@ public class GameController : Controller<Application>
                     // player.startPosHealth();
                     //Debug.Log("Start Pos Health");
                 }
-                else if (type == "decrease")
-                    player.decreasingHP();
+                /*else if (type == "decrease")
+                    player.decreasingHP();*/
                 break;
 
             case "enemy":
