@@ -33,15 +33,16 @@ public class PlayerController : Controller<Application>
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackRight")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackLeft")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackBack")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
+
         this.player.move(x, y);
+
         app.model.player.creatureAnim.SetFloat("Horizontal", this.player.movement.x);
         app.model.player.creatureAnim.SetFloat("Vertical", this.player.movement.y);
         app.model.player.creatureAnim.SetFloat("Speed", this.player.movement.sqrMagnitude);
-
-        // app.model.player.creatureAnim.SetBool("IdleRight", false);
-        // app.model.player.creatureAnim.SetBool("IdleLeft", false);
-        // app.model.player.creatureAnim.SetBool("IdleBack", false);
-        // app.model.player.creatureAnim.SetBool("IdleFront", false);
 
         if (this.player.movement.x == 1) {
             direction = "right";
@@ -54,12 +55,6 @@ public class PlayerController : Controller<Application>
         }
 
         if (this.player.movement.x == 0 && this.player.movement.y == 0) {
-
-            if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackRight")) return;
-            if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackLeft")) return;
-            if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackBack")) return;
-            if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
-
             switch(direction) {
                 case "right":
                     app.model.player.creatureAnim.Play("IdleRight");
@@ -92,17 +87,10 @@ public class PlayerController : Controller<Application>
         Debug.Log("SS");
         app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
         app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
-        /*Debug.Log("WHYYYY");
-        if (player.hp < 100)
-        {
-            Debug.Log("YESSSS");
-            //app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
-            //app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
-        }*/
     }
 
     public void kickingPlayer() {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && this.player.movement.x == 0 && this.player.movement.y == 0)
         {
             switch(direction) {
                 case "right":
