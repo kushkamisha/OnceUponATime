@@ -70,14 +70,10 @@ public class EnemyController : Model<Application>
         return this.creatures[enemyIndex];
     }
 
-    void OnTriggerEnter2D(Collider2D otherCreature)
+    public void DecreaseHP(float val)
     {
-        if (otherCreature.gameObject.tag.Equals("Player"))
-        {
-            Debug.Log("AZAZA");
-            Debug.Log(this.creatures[0].state);
-        }
-        
+        app.model.enemy.hp -= val;
+        Debug.Log("Enemy new HP: " + app.model.enemy.hp);
     }
 
 }

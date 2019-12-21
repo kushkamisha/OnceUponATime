@@ -10,4 +10,8 @@ public class EnemyView : View<Application>
     void FixedUpdate() { 
         Notify("enemy", "moveRB");
     }
+
+    public void DecreaseHP(float val) {
+        Notify("enemy", "decreaseHP", val);
+    }
 }
