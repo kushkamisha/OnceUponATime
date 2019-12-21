@@ -13,7 +13,7 @@ public class AIMoves : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
