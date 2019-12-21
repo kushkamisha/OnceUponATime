@@ -132,17 +132,4 @@ public class PlayerController : Controller<Application>
 
         GUI.Label(new Rect(40, 10, 100, 20), "Coins : " + coin_points, style);
     }
-
-    IEnumerator gameOver()
-    {
-        Debug.Log("game over");
-        lvlText = app.model.lvltext.levelTextObj.transform.GetChild(0).gameObject.GetComponent<Text>();
-        lvlText.text = "Game Over";
-        
-        GameObject.FindWithTag("Player").SetActiveRecursively(false);
-
-        yield return new WaitForSeconds(app.model.lvltext.time2Disappear);
-
-        SceneManager.LoadScene("StartMenu");
-    }
 }
