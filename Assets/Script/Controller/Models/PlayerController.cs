@@ -1,4 +1,7 @@
 ﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using amvcc;
 
 public class PlayerController : Controller<Application>
@@ -7,7 +10,7 @@ public class PlayerController : Controller<Application>
     public static int coin_points = 0;
     private Constants constants = new Constants();
     private string direction = "down";
-
+    private Text lvlText;
     private Vector2 mousePos;
 
     void Start(){
@@ -28,7 +31,6 @@ public class PlayerController : Controller<Application>
  
         if (this.player.hp <= 0)
         {
-            GameObject.FindWithTag("Player").SetActiveRecursively(false);
             Debug.Log("the player is dead");
         }
         float x = Input.GetAxisRaw("Horizontal");
@@ -131,12 +133,16 @@ public class PlayerController : Controller<Application>
         GUI.Label(new Rect(40, 10, 100, 20), "Coins : " + coin_points, style);
     }
 
-    /*void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator gameOver()
     {
-        if (collision.gameObject.name.Equals("Enemy"))
-        {
-            app.model.enemy.hp -= 10f;
-            Debug.Log("Enemy HP: " + app.model.enemy.hp);
-        }
-    }*/
+        Debug.Log("game over");
+        lvlText = app.model.lvltext.levelTextObj.transform.GetChild(0).gameObject.GetComponent<Text>();
+        lvlText.text = "Game Over";
+        
+        GameObject.FindWithTag("Player").SetActiveRecursively(false);
+
+        yield return new WaitForSeconds(app.model.lvltext.time2Disappear);
+
+        SceneManager.LoadScene("StartMenu");
+    }
 }

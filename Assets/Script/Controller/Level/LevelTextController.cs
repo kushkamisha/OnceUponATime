@@ -11,11 +11,12 @@ public class LevelTextController : Controller<Application>
     void Update()
     {
         // Total shit! Must be replaced more smart!
-        if (app.controller.player.getCreature().hp < 0)
-        {
-            gameOver();
-        }
+        // if (app.controller.player.getCreature().hp < 0)
+        // {
+            // gameOver();
+        // }
     }
+
     public void SetText()
     {
         lvlText = app.model.lvltext.levelTextObj.transform.GetChild(0).gameObject.GetComponent<Text>();
@@ -28,12 +29,6 @@ public class LevelTextController : Controller<Application>
         // Destroy(app.model.lvltext.levelTextObj);
         lvlText = app.model.lvltext.levelTextObj.transform.GetChild(0).gameObject.GetComponent<Text>();
         lvlText.text = "";
-    }
-
-    public void gameOver()
-    {
-        lvlText = app.model.lvltext.levelTextObj.transform.GetChild(0).gameObject.GetComponent<Text>();
-        lvlText.text = "Game Over";
     }
 }
 
