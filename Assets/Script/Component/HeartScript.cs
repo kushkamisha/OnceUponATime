@@ -9,6 +9,7 @@ public class HeartScript : Controller<Application>
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("take");
             if (app.controller.player.getCreature().hp < 100) 
             {
                 app.controller.player.getCreature().hp += 10f;
