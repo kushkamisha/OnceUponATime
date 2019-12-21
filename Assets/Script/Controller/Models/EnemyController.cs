@@ -76,6 +76,11 @@ public class EnemyController : Model<Application>
         // Destroy(GameObject.Find(collision.gameObject.name+"(Clone)"));
         Debug.Log("Enemy new HP: " + app.model.enemy.hp);
 
+        // Debug.Log("HP width: " + app.view.player.transform.parent.GetChild(0).gameObject.transform.localScale);
+        // Debug.Log(transform.Find("HP").gameObject.name);
+        obj.transform.Find("HP").transform.localScale -= new Vector3((float)(3.45 / 6), 0, 0);
+        // app.view.player.transform.localScale -= new Vector3(1, 0, 0);
+
         if (app.model.enemy.hp < 0) {
             Debug.Log("the enemy is dead");
             // Destroy(this);
