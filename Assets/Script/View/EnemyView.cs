@@ -11,7 +11,7 @@ public class EnemyView : View<Application>
         Notify("enemy", "moveRB");
     }
 
-    public void DecreaseHP(float val) {
-        Notify("enemy", "decreaseHP", val);
+    public void DecreaseHP(float val, GameObject obj) {
+        Notify("enemy", "decreaseHP", val, obj);
     }
 }

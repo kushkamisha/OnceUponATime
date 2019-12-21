@@ -11,9 +11,9 @@ public class SwordTrigger : Controller<Application>
         {
             if (gameObject.activeSelf)
             {
-                collision.gameObject.SetActive(false);
+                // collision.gameObject.SetActive(false);
                 EnemyView enemy = (EnemyView)collision.gameObject.GetComponent<EnemyView>();
-                enemy.DecreaseHP(20f);
+                enemy.DecreaseHP(20f, collision.gameObject);
             }
         }
     }

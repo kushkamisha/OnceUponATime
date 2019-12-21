@@ -70,13 +70,17 @@ public class EnemyController : Model<Application>
         return this.creatures[enemyIndex];
     }
 
-    public void DecreaseHP(float val)
+    public void DecreaseHP(float val, GameObject obj)
     {
         app.model.enemy.hp -= val;
         // Destroy(GameObject.Find(collision.gameObject.name+"(Clone)"));
         Debug.Log("Enemy new HP: " + app.model.enemy.hp);
 
-        // if (app.model.enemy.hp < 0) Destroy(this);
+        if (app.model.enemy.hp < 0) {
+            Debug.Log("the enemy is dead");
+            // Destroy(this);
+            obj.SetActive(false);
+        }
     }
 
 }

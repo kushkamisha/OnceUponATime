@@ -62,7 +62,7 @@ public class GameController : Controller<Application>
                 if (type == "moveRB")
                     enemy.moveRB();
                 if (type == "decreaseHP")
-                    enemy.DecreaseHP((float)p_data[1]);
+                    enemy.DecreaseHP((float)p_data[1], (GameObject)p_data[2]);
                 break;
 
             case "camera":
