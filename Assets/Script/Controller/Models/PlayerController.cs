@@ -82,7 +82,7 @@ public class PlayerController : Controller<Application>
 
     public BaseCreature getCreature() { return this.player; }
 
-    public void decreasingHP()
+    public void decreasingHP() {
         app.controller.healthBar.localScale.x = player.hp / constants.hpCoef;
         app.controller.healthBar.transform.localScale = app.controller.healthBar.localScale;
     }
