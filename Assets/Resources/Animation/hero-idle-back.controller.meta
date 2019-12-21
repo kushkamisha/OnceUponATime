@@ -1,6 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Resources/Animation/hero-idle-back.controller.meta
 guid: 49cd39424364e4176b74eea7157be88e
 NativeFormatImporter:
+=======
+guid: fe92284e547b942f1919c36169f9845b
+folderAsset: yes
+DefaultImporter:
+>>>>>>> attack:Assets/Resources/Animation/Hero/Attack.meta
+=======
+guid: 49cd39424364e4176b74eea7157be88e
+NativeFormatImporter:
+>>>>>>> attack
   externalObjects: {}
   mainObjectFileID: 0
   userData: 
