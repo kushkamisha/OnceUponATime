@@ -88,9 +88,16 @@ public class PlayerController : Controller<Application>
     }
 
     public void kickingPlayer() {
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackRight")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackLeft")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackBack")) return;
+        if (app.model.player.creatureAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackFront")) return;
+        
         if (Input.GetKey(KeyCode.Space) && this.player.movement.x == 0 && this.player.movement.y == 0)
         {
-            switch(direction) {
+            GameObject.Find("Sword").GetComponent<Collider2D>().enabled = true;
+            Debug.Log("Kick");
+            switch (direction) {
                 case "right":
                     app.model.player.creatureAnim.Play("AttackRight");
                     break;

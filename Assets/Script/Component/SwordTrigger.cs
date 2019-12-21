@@ -22,6 +22,7 @@ public class SwordTrigger : Controller<Application>
         Debug.Log("sword trigger");
         if(collision.gameObject.tag == "Enemy")
         {
+            //gameObject.GetComponent<Collider2D>().enabled = true;
             //Debug.Log("Enemy detected");
             if (gameObject.activeSelf)
             {
