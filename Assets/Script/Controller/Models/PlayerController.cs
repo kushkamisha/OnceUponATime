@@ -28,7 +28,8 @@ public class PlayerController : Controller<Application>
  
         if (this.player.hp <= 0)
         {
-            Destroy(gameObject);
+            GameObject.FindWithTag("Player").SetActiveRecursively(false);
+            Debug.Log("the player is dead");
         }
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");

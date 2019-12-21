@@ -73,7 +73,10 @@ public class EnemyController : Model<Application>
     public void DecreaseHP(float val)
     {
         app.model.enemy.hp -= val;
+        // Destroy(GameObject.Find(collision.gameObject.name+"(Clone)"));
         Debug.Log("Enemy new HP: " + app.model.enemy.hp);
+
+        // if (app.model.enemy.hp < 0) Destroy(this);
     }
 
 }
