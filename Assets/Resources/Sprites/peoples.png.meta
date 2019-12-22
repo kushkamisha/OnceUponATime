@@ -1,0 +1,2323 @@
+fileFormatVersion: 2
+guid: e608ac9bddf66184cbc144c0b334bfb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -439916002107188609
+    second: peoples_0
+  - first:
+      213: 2743604978119802941
+    second: peoples_1
+  - first:
+      213: -6295238302300097638
+    second: peoples_2
+  - first:
+      213: -1408726654664050267
+    second: peoples_3
+  - first:
+      213: -1682330482229437585
+    second: peoples_4
+  - first:
+      213: -2872040179672459654
+    second: peoples_5
+  - first:
+      213: -4410940147446288724
+    second: peoples_6
+  - first:
+      213: 3418233919903721576
+    second: peoples_7
+  - first:
+      213: 5980881725248533540
+    second: peoples_8
+  - first:
+      213: -1705042225192810095
+    second: peoples_9
+  - first:
+      213: -6557268009327055316
+    second: peoples_10
+  - first:
+      213: 828220775331460071
+    second: peoples_11
+  - first:
+      213: 6514952973657034916
+    second: peoples_12
+  - first:
+      213: 3269297391688061175
+    second: peoples_13
+  - first:
+      213: -2921952471324062605
+    second: peoples_14
+  - first:
+      213: 3519900839916036669
+    second: peoples_15
+  - first:
+      213: 3471602216485156224
+    second: peoples_16
+  - first:
+      213: 2129693718891390049
+    second: peoples_17
+  - first:
+      213: 7641648253565677098
+    second: peoples_18
+  - first:
+      213: 143169278347173451
+    second: peoples_19
+  - first:
+      213: 4537519978488890574
+    second: peoples_20
+  - first:
+      213: -1882697262752238266
+    second: peoples_21
+  - first:
+      213: 3046171760768427384
+    second: peoples_22
+  - first:
+      213: -7456648248630406877
+    second: peoples_23
+  - first:
+      213: 73808743230434415
+    second: peoples_24
+  - first:
+      213: -9000785658988390529
+    second: peoples_25
+  - first:
+      213: 4954525557179066701
+    second: peoples_26
+  - first:
+      213: 6822786462220650453
+    second: peoples_27
+  - first:
+      213: 509557665788476009
+    second: peoples_28
+  - first:
+      213: 6885849898609390428
+    second: peoples_29
+  - first:
+      213: 1656518261103054008
+    second: peoples_30
+  - first:
+      213: 7081435918407569636
+    second: peoples_31
+  - first:
+      213: -7390246414159344247
+    second: peoples_32
+  - first:
+      213: 7281111118961067750
+    second: peoples_33
+  - first:
+      213: 6730426268874502073
+    second: peoples_34
+  - first:
+      213: -9192542086387393653
+    second: peoples_35
+  - first:
+      213: 5535289672334758955
+    second: peoples_36
+  - first:
+      213: 1176666920551260949
+    second: peoples_37
+  - first:
+      213: 3827451399543751264
+    second: peoples_38
+  - first:
+      213: -8307892083780372531
+    second: peoples_39
+  - first:
+      213: -7926092875318520374
+    second: peoples_40
+  - first:
+      213: -8594558115680448096
+    second: peoples_41
+  - first:
+      213: -5148807210959747765
+    second: peoples_42
+  - first:
+      213: -2621488614508013233
+    second: peoples_43
+  - first:
+      213: -6197095175829904259
+    second: peoples_44
+  - first:
+      213: -3035322963171566852
+    second: peoples_45
+  - first:
+      213: -3119077236013513043
+    second: peoples_46
+  - first:
+      213: -6423480167504896496
+    second: peoples_47
+  - first:
+      213: -1942175403086866474
+    second: peoples_48
+  - first:
+      213: -4287349243571295837
+    second: peoples_49
+  - first:
+      213: -1239759072138978725
+    second: peoples_50
+  - first:
+      213: 5579391566524387756
+    second: peoples_51
+  - first:
+      213: 6640682639258851508
+    second: peoples_52
+  - first:
+      213: 1767371787524055195
+    second: peoples_53
+  - first:
+      213: -717038009432219814
+    second: peoples_54
+  - first:
+      213: -8837133737774070197
+    second: peoples_55
+  - first:
+      213: -9146213198337336551
+    second: peoples_56
+  - first:
+      213: 1826663168222500830
+    second: peoples_57
+  - first:
+      213: 8711014787327037372
+    second: peoples_58
+  - first:
+      213: -8170419374663259680
+    second: peoples_59
+  - first:
+      213: 2144077636473816666
+    second: peoples_60
+  - first:
+      213: 6785822325728327815
+    second: peoples_61
+  - first:
+      213: -5264616971762626884
+    second: peoples_62
+  - first:
+      213: -5034195354067659296
+    second: peoples_63
+  - first:
+      213: -6020917692990672424
+    second: peoples_64
+  - first:
+      213: 8704296644727550540
+    second: peoples_65
+  - first:
+      213: -8129414584638403456
+    second: peoples_66
+  - first:
+      213: -2228730732584340697
+    second: peoples_67
+  - first:
+      213: -5065203654536193800
+    second: peoples_68
+  - first:
+      213: 8220340119581521076
+    second: peoples_69
+  - first:
+      213: -2316177473312697093
+    second: peoples_70
+  - first:
+      213: -8736043769782862516
+    second: peoples_71
+  - first:
+      213: -3995441922252498691
+    second: peoples_72
+  - first:
+      213: -5624975261560260618
+    second: peoples_73
+  - first:
+      213: -1717917966160266059
+    second: peoples_74
+  - first:
+      213: 773574874550984898
+    second: peoples_75
+  - first:
+      213: -1765752727401832891
+    second: peoples_76
+  - first:
+      213: 2239581913958542841
+    second: peoples_77
+  - first:
+      213: 3780685176118547409
+    second: peoples_78
+  - first:
+      213: -155697294700999391
+    second: peoples_79
+  - first:
+      213: -3525569320917421441
+    second: peoples_80
+  - first:
+      213: -7468021560939708269
+    second: peoples_81
+  - first:
+      213: -3785690735345739480
+    second: peoples_82
+  - first:
+      213: -6219924497996612735
+    second: peoples_83
+  - first:
+      213: 8508885556779177714
+    second: peoples_84
+  - first:
+      213: -5054175429523327926
+    second: peoples_85
+  - first:
+      213: 3951323626249733359
+    second: peoples_86
+  - first:
+      213: -3451761858343992927
+    second: peoples_87
+  - first:
+      213: -4361486146541856706
+    second: peoples_88
+  - first:
+      213: 4325159476536603893
+    second: peoples_89
+  - first:
+      213: -4509944000866946498
+    second: peoples_90
+  - first:
+      213: 1442840377249509712
+    second: peoples_91
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: peoples_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 336
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf938d921df6d164791d4991a4d77b4b
+      internalID: -439916002107188609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 336
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16475b125cb5fea44a16a2563236e6b6
+      internalID: 2743604978119802941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 336
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c4455ded3c9e049836a1dcc6205380
+      internalID: -6295238302300097638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 336
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7466e8085bfd3d848a421d8fa4c0ecbc
+      internalID: -1408726654664050267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 336
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb2691612ccb5f44b9caced8f6545e7
+      internalID: -1682330482229437585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 336
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34be560ed108a546b76847dbe51e968
+      internalID: -2872040179672459654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 336
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d869546346db14292ed6187a4b8863
+      internalID: -4410940147446288724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 336
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbcba6849e2ee84088fe317fbfb725d
+      internalID: 3418233919903721576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_8
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 336
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c085b8d85ead684bb4fa6528533f979
+      internalID: 5980881725248533540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_9
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 336
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435c69ce72e29214e8116f3941749387
+      internalID: -1705042225192810095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_10
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 336
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bee6c47b910bb46a1329d0478706b0
+      internalID: -6557268009327055316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_11
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 336
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c131703b725fed4aac08b15568feeeb
+      internalID: 828220775331460071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 288
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c35c9688cfbdd4c850d5fdcb24b232
+      internalID: 6514952973657034916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 288
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a104231083e054849b7db9487bb3cca3
+      internalID: 3269297391688061175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 288
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935b17079bda97c48956a0161ff1a0e1
+      internalID: -2921952471324062605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 288
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7624194339feee545a7d0dba715bda39
+      internalID: 3519900839916036669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 288
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fbe719353e6d449bdd82af6cc1e706
+      internalID: 3471602216485156224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 288
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1ffad4f490e8340a988a0951eeac5a
+      internalID: 2129693718891390049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 288
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb7c0aea4c45674c9aded3e49179532
+      internalID: 7641648253565677098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_19
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 288
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1c4f730f99f4c48a71680467b58bcf
+      internalID: 143169278347173451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_20
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 288
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcea1a629c4cb541b326263336d2931
+      internalID: 4537519978488890574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_21
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 288
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d13d4607d6ce648a1266455284a61b
+      internalID: -1882697262752238266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_22
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 288
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baa7d62b1a49cb408b26c8aae0a8b81
+      internalID: 3046171760768427384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_23
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 288
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28509ad180256cc4eb70118e849d9b2c
+      internalID: -7456648248630406877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 240
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5462eeb4d8f546047b9f52c296f8bb2d
+      internalID: 73808743230434415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 240
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f928a7b271c7fcd4a8d9d479fb369c5e
+      internalID: -9000785658988390529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 240
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9783da18d2c4544b895897723e665c
+      internalID: 4954525557179066701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_27
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 240
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3f12a7ff4f10e44bd16aa928281adf
+      internalID: 6822786462220650453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_28
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 240
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275ca7a35c8690645a262a261df14739
+      internalID: 509557665788476009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_29
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 240
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf4061d9903808479254c2e7aeb6afd
+      internalID: 6885849898609390428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_30
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 240
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5552f29ebb4614492b8ff27cb85e61
+      internalID: 1656518261103054008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 240
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a9c00381cebad4bb2ede51f2ab5585
+      internalID: 7081435918407569636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_32
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 240
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae921f4fc30c354db252cc53c3b04f2
+      internalID: -7390246414159344247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_33
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 240
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baea16454fb95b34db1932cedbc619a5
+      internalID: 7281111118961067750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_34
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 240
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456df852d79b3d6409671c92442ccb96
+      internalID: 6730426268874502073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_35
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 240
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08d50ce2448d0c4aadaa8b328a863f2
+      internalID: -9192542086387393653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 192
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945a57609cdbf1d4990a0160f1c2d5a2
+      internalID: 5535289672334758955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 192
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12888ceae20d374e89b17eb049a7514
+      internalID: 1176666920551260949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848c014666bfc494ca6e4879f87ac3ae
+      internalID: 3827451399543751264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_39
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 192
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc0477262f162a4cb01eb7ccda8f152
+      internalID: -8307892083780372531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_40
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 35
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b047e705fd592064ebce93e46861346e
+      internalID: -7926092875318520374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_41
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 192
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354da8e672a281d42bb46b4f09757af9
+      internalID: -8594558115680448096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_42
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 192
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68af666af5ffea4e81ddf20f103c001
+      internalID: -5148807210959747765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_43
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 192
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da4ca44f4a32da449e31353d7316280
+      internalID: -2621488614508013233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_44
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 192
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f10d6ae0d29c724380edaab53d5fc33
+      internalID: -6197095175829904259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_45
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 192
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92400fc6a0a7b234d84cde02655c5fdc
+      internalID: -3035322963171566852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_46
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 192
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b566a39b877f84ba0609f83f64b9dd
+      internalID: -3119077236013513043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_47
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 192
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5a431ec72a7d945bae86e5c6f57cfa
+      internalID: -6423480167504896496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 144
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee7701dfc377e04d872d98984ef5e61
+      internalID: -1942175403086866474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_49
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 144
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53f6e3df70544f49a8e4969e147d404
+      internalID: -4287349243571295837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_50
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 144
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbd6e540d7c77f408fd5ff94c159179
+      internalID: -1239759072138978725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_51
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 144
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88766a2688d8cc240a42c4dc3a5eda99
+      internalID: 5579391566524387756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_52
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 144
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ea173f252e21e43a0684bfa34e2532
+      internalID: 6640682639258851508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_53
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 144
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795254d8c8720c4408536130bf881298
+      internalID: 1767371787524055195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_54
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 144
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6289798f68e5db4bbcb14507bd425ed
+      internalID: -717038009432219814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 144
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea56f2aee33bf10478ac4f3c8b318299
+      internalID: -8837133737774070197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_56
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 144
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecbc99a9184b594bbfab4b85847b415
+      internalID: -9146213198337336551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_57
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 144
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a938a22e6f8a0b47a5e85de6d4b4004
+      internalID: 1826663168222500830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_58
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 144
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5248a4c535f364584eca496fc7fc34
+      internalID: 8711014787327037372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_59
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 96
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee64a6b439449c49bb4175205361244
+      internalID: -8170419374663259680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_60
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 96
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fbcea9284a85d4989ca3ca21dcb917
+      internalID: 2144077636473816666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_61
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 96
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7df1976dcbb7a4f81f2d102907ad5e
+      internalID: 6785822325728327815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_62
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 96
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dea522f9e15e5f48943c6f49d236c3f
+      internalID: -5264616971762626884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_63
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 96
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bb42163914a3a45a8c58da7e784b7e
+      internalID: -5034195354067659296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_64
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 96
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc69838421d2f5b42adf3ee13e1599a9
+      internalID: -6020917692990672424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_65
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 96
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdc7cd1890c9c94488c16985248211f
+      internalID: 8704296644727550540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_66
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 96
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c825c178c0592e4db5d75c4b065b37c
+      internalID: -8129414584638403456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_67
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 96
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40df39e7170807b45a9d6465e23842fd
+      internalID: -2228730732584340697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_68
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 96
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcd83e913399ec49a47a38f449bf305
+      internalID: -5065203654536193800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_69
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 96
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86faa903edb35c4fb12ee099ed8216b
+      internalID: 8220340119581521076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_70
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 48
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68abab7779201334d927a42e768d2949
+      internalID: -2316177473312697093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_71
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 48
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93a52f3ee5bd184fbfabcfb58dd31c2
+      internalID: -8736043769782862516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_72
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 48
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1916cd192a9bacc4b9ef757bad2e5804
+      internalID: -3995441922252498691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_73
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 48
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd028780dc4d54b45a28742fb5e941a1
+      internalID: -5624975261560260618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_74
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 48
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bd71d57e3ab244387d479da1a76e33
+      internalID: -1717917966160266059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_75
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 48
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5152c604c1e1d0f4bb0332187531bf89
+      internalID: 773574874550984898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_76
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 48
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759b0fed12968e4da306d2a26de0753
+      internalID: -1765752727401832891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_77
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 48
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02bdf955c24fea49b1d0086e95deff9
+      internalID: 2239581913958542841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_78
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 48
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0e2d0eddc477242bbacb9a55c60b6a
+      internalID: 3780685176118547409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_79
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 48
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2a86327ea6d4e4d8da0ece8dd32adc
+      internalID: -155697294700999391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_80
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 48
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e288b494db1632408065f389ad2aa63
+      internalID: -3525569320917421441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_81
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436d3eab3c40c12498143f290d8914ca
+      internalID: -7468021560939708269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_82
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b58a6b554ec6aa4896180064de43778
+      internalID: -3785690735345739480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_83
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa1bb5bcd79a514b99fa58999427ded
+      internalID: -6219924497996612735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_84
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b282a8f8fbab75f4186298b070344f55
+      internalID: 8508885556779177714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_85
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3845397a22037ee42a14e35f8221e951
+      internalID: -5054175429523327926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_86
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98caf5cc850a3004cb168fc629a50a0a
+      internalID: 3951323626249733359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_87
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304efa1125725f741b42f152185127c0
+      internalID: -3451761858343992927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_88
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9188ef50753e98d448da882347bcf5f0
+      internalID: -4361486146541856706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_89
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a2def2a0835fe4da773e3cff76d620
+      internalID: 4325159476536603893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_90
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa826f73f72384b45ad3d9642ce58c72
+      internalID: -4509944000866946498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peoples_91
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc84d29978ae9c445a19d430d754e2f1
+      internalID: 1442840377249509712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
