@@ -34,4 +34,8 @@ public class GameModel : Model<Application>
     // Reference to the Level Generator model
     public LevelTextModel lvltext { get { return m_lvltext = Assert<LevelTextModel>(m_lvltext); } }
     private LevelTextModel m_lvltext;
+
+    // Reference to the Pause model
+    public PauseModel pause { get { return m_pause = Assert<PauseModel>(m_pause); } }
+    private PauseModel m_pause;
 }

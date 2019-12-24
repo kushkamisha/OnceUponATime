@@ -32,6 +32,10 @@ public class GameController : Controller<Application>
     public HealthBar healthBar { get { return m_healthBar = Assert<HealthBar>(m_healthBar); } }
     private HealthBar m_healthBar;
 
+    // Reference to the Pause controller
+    public PauseController pause { get { return m_pause = Assert<PauseController>(m_pause); } }
+    private PauseController m_pause;
+
     public override void OnNotification(string p_event, Object p_target, params object[] p_data)
     {
         string type;
@@ -46,13 +50,6 @@ public class GameController : Controller<Application>
                     player.moveRB();
                 else if (type == "kicking")
                     player.kickingPlayer();
-                else if (type == "startPosHealth")
-                {
-                    // player.startPosHealth();
-                    //Debug.Log("Start Pos Health");
-                }
-                /*else if (type == "decrease")
-                    player.decreasingHP();*/
                 break;
 
             case "enemy":
@@ -71,13 +68,13 @@ public class GameController : Controller<Application>
                     mainCamera.init();
                 else if (type == "move")
                     mainCamera.move();
-
                 break;
-            case "level door":
 
+            case "level door":
                 Collider2D col = (Collider2D)p_data[0];
                 level.loadScene(col);
                 break;
+
             case "level":
                 type = (string)p_data[0];
                 if (type == "generate")
@@ -85,11 +82,20 @@ public class GameController : Controller<Application>
                 else if (type == "init")
                     level.Init();
                 break;
+
             case "level.text":
                 type = (string)p_data[0];
                 if (type == "wait")
                     lvltext.SetText();
                     StartCoroutine(lvltext.RemoveTextAfterTime());
+                break;
+            
+            case "game":
+                type = (string)p_data[0];
+                if (type == "pause")
+                    pause.PauseGame();
+                else if (type == "resume")
+                    pause.ResumeGame();
                 break;
         }
     }
