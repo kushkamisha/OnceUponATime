@@ -27,7 +27,7 @@ public class PlayerController : Controller<Application>
 
     public void move()
     {
-        Debug.Log(this.player.hp);
+        Debug.Log("Player hp: " + this.player.hp);
  
         if (this.player.hp <= 0)
         {

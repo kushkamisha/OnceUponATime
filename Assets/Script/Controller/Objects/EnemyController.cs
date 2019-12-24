@@ -19,22 +19,21 @@ public class EnemyController : Model<Application>
                 app.model.enemies[i].speed,
                 app.model.enemies[i].defence,
                 app.model.enemies[i].force,
-                app.model.enemies[i].attackSpeed
-            ));;
+                app.model.enemies[i].attackSpeed,
+                true
+            ));
         }
     }
 
     public void move(int enemyIndex, float x, float y)
     {
         this.creatures[enemyIndex].move(x, y);
-
-        /*app.model.enemy.creatureAnim.SetFloat("Horizontal", this.creature.movement.x);
-        app.model.enemy.creatureAnim.SetFloat("Vertical", this.creature.movement.y);
-        app.model.enemy.creatureAnim.SetFloat("Speed", this.creature.movement.sqrMagnitude);*/
     }
 
     public void moveRB(int enemyIndex)
     {
+        if (!this.creatures[enemyIndex].isActive) return;
+
         app.model.enemies[enemyIndex].creatureRB.MovePosition(app.model.enemies[enemyIndex].creatureRB.position + this.creatures[enemyIndex].movement * this.creatures[enemyIndex].speed * Time.fixedDeltaTime);
         this.creatures[enemyIndex].position = app.model.enemies[enemyIndex].creatureRB.position;
     }
@@ -49,6 +48,8 @@ public class EnemyController : Model<Application>
 
     public void action(int enemyIndex, BaseCreature otherCreature)
     {
+        if (!this.creatures[enemyIndex].isActive) return;
+
         this.creatures[enemyIndex].action(otherCreature);
     }
 
@@ -72,16 +73,26 @@ public class EnemyController : Model<Application>
 
     public void DecreaseHP(float val, GameObject obj)
     {
-        app.model.enemy.hp -= val;
-        // Destroy(GameObject.Find(collision.gameObject.name+"(Clone)"));
-        Debug.Log("Enemy new HP: " + app.model.enemy.hp);
+        Orc1Model enemyModel = null;
+        EnemyView enemyView = obj.GetComponent<EnemyView>();
+        int index = 0;
+    
+        for (int i = 0; i < app.model.enemies.Count; i++)
+            if (enemyView == app.model.enemies[i].view) {
+                enemyModel = app.model.enemies[i];
+                index = i;
+            }
+
+        enemyModel.hp -= val;
+        Debug.Log("Enemy new HP: " + enemyModel.hp);
 
         obj.transform.Find("HP").transform.localScale -= new Vector3((float)(3.45 / 6), 0, 0);
 
-        if (app.model.enemy.hp < 0) {
+        if (enemyModel.hp < 0) {
             Debug.Log("the enemy is dead");
-            // Destroy(this);
             obj.SetActive(false);
+            this.creatures[index].isActive = false;
+            // Destroy(obj);
         }
     }
 

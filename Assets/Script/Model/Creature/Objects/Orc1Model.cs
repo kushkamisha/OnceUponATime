@@ -13,5 +13,6 @@ public class Orc1Model : Model<Application>
     public float defence = 3f;
     public int attackSpeed = 50;
     public float circleSize = 7f;
+    public EnemyView view;
 }
 

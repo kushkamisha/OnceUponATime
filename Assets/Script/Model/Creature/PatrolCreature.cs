@@ -7,6 +7,7 @@ public class PatrolCreature : CreatureAttack
 
     public string state = "patrol";
     public Vector3 patrolPoint;
+    public bool isActive;
     public float patrolRadius;
     private Vector2 patrolMovement = new Vector2(1, 1);
     public float circleSize;
@@ -25,12 +26,14 @@ public class PatrolCreature : CreatureAttack
         float speed,
         float defence,
         float force,
-        int attackSpeed
+        int attackSpeed,
+        bool isActive
         ) : base(position, viewingRadius, speed, defence, force, attackSpeed)
     {
         this.patrolPoint = patrolPoint;
         this.patrolRadius = patrolRadius;
         this.circleSize = circleSize;
+        this.isActive = isActive;
     }
 
     private void patrol()

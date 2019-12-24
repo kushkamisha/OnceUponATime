@@ -134,6 +134,7 @@ public class LvlGenController : Controller<Application>
                 app.model.createOrc1Model();
                 app.model.enemies[app.model.enemies.Count-1].creatureRB = app.model.lvlgen.enemies[app.model.lvlgen.enemies.Count-1].GetComponent<Rigidbody2D>();
                 app.model.enemies[app.model.enemies.Count-1].creatureAnim = app.model.lvlgen.enemies[app.model.lvlgen.enemies.Count-1].GetComponent<Animator>();
+                app.model.enemies[app.model.enemies.Count-1].view = enemyView;
         }
     }
 

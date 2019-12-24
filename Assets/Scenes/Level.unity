@@ -624,7 +624,7 @@ MonoBehaviour:
   player: {fileID: 3561678475199145208, guid: d015c1e0c93c740bba33afa53f9135f1, type: 3}
   enemies: []
   enemy: {fileID: 6368657171747835794, guid: b997d192b18e043c3b13331ea01d224a, type: 3}
-  defaultEnemyAmount: 0
+  defaultEnemyAmount: 2
   enemyAmount: 0
   tiles:
   - {fileID: 2511505557434413843, guid: dee0ec41cb4494194a5a345f5d15c01c, type: 3}
