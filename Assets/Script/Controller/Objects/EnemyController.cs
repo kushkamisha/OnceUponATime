@@ -86,14 +86,16 @@ public class EnemyController : Model<Application>
         enemyModel.hp -= val;
         Debug.Log("Enemy new HP: " + enemyModel.hp);
 
-        obj.transform.Find("HP").transform.localScale -= new Vector3((float)(3.45 / 6), 0, 0);
-
-        if (enemyModel.hp < 0) {
+        if (enemyModel.hp <= 0) {
             Debug.Log("the enemy is dead");
             obj.SetActive(false);
             this.creatures[index].isActive = false;
-            // Destroy(obj);
         }
+
+        // Shorten the HP bar
+        float hpBarDefaultXScale = 3.45f;
+        float hpBarDefaultYScale = 0.37f;
+        obj.transform.Find("HP").transform.localScale = new Vector3((hpBarDefaultXScale * enemyModel.hp / 100), hpBarDefaultYScale, 0);
     }
 
 }

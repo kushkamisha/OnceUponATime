@@ -28,6 +28,11 @@ public class PlayerController : Controller<Application>
     public void move()
     {
         Debug.Log("Player hp: " + this.player.hp);
+
+        // Shorten the HP bar
+        float hpBarDefaultXScale = 0.12159f;
+        float hpBarDefaultYScale = 0.01048f;
+        GameObject.FindWithTag("Player").transform.Find("HP").transform.localScale = new Vector3((hpBarDefaultXScale * this.player.hp / 100), hpBarDefaultYScale, 0);
  
         if (this.player.hp <= 0)
         {
