@@ -15,7 +15,8 @@ public class PlayerController : Controller<Application>
 
     void Start(){
         this.player = new CreatureAttack(
-            app.model.player.creatureRB.position, 
+            app.model.player.creatureRB.position,
+            app.model.player.hp, 
             app.model.player.viewingRadius, 
             app.model.player.speed,
             app.model.player.defence,

@@ -701,7 +701,7 @@ MonoBehaviour:
     type: 3}
   creatureAnim: {fileID: 3561678475199145186, guid: d015c1e0c93c740bba33afa53f9135f1,
     type: 3}
-  hp: 100
+  hp: 10
   speed: 20
   viewingRadius: 10
   force: 1

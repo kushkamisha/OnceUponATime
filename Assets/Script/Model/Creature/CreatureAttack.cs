@@ -18,7 +18,7 @@ public class CreatureAttack : BaseCreature {
         this.skills = new CreatureSkills();
     }
 
-    public CreatureAttack(Vector3 position, float viewingRadius, float speed, float defence, float force, int attackSpeed): base(position)
+    public CreatureAttack(Vector3 position, float hp, float viewingRadius, float speed, float defence, float force, int attackSpeed): base(position, hp, speed, viewingRadius)
     {
         this.skills = new CreatureSkills(viewingRadius, speed, defence, force, attackSpeed);
     }

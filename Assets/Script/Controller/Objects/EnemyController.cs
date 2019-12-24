@@ -12,6 +12,7 @@ public class EnemyController : Model<Application>
         {
             this.creatures.Add(new PatrolCreature(
                 app.model.enemies[i].creatureRB.position,
+                app.model.enemies[i].hp,
                 app.model.enemies[i].circleSize,
                 app.model.enemies[i].creatureRB.position,
                 app.model.enemies[i].patrolRadius,

@@ -18,7 +18,9 @@ public class PatrolCreature : CreatureAttack
         this.patrolRadius = 5f;
     }
 
-    public PatrolCreature(Vector3 position,
+    public PatrolCreature(
+        Vector3 position,
+        float hp,
         float circleSize,
         Vector3 patrolPoint,
         float patrolRadius,
@@ -28,7 +30,7 @@ public class PatrolCreature : CreatureAttack
         float force,
         int attackSpeed,
         bool isActive
-        ) : base(position, viewingRadius, speed, defence, force, attackSpeed)
+        ) : base(position, hp, viewingRadius, speed, defence, force, attackSpeed)
     {
         this.patrolPoint = patrolPoint;
         this.patrolRadius = patrolRadius;
