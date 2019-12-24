@@ -701,10 +701,10 @@ MonoBehaviour:
     type: 3}
   creatureAnim: {fileID: 3561678475199145186, guid: d015c1e0c93c740bba33afa53f9135f1,
     type: 3}
-  hp: 10
+  hp: 100
   speed: 20
   viewingRadius: 10
-  force: 1
+  force: 3
   defence: 0
   attackSpeed: 50
 --- !u!4 &1166774525 stripped
