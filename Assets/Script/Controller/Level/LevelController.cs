@@ -16,7 +16,7 @@ public class LevelController : Controller<Application>
         if (app.model.lvltext == null) return;
 
         // Set the level number
-        PlayerPrefs.SetInt("level.number", app.model.lvltext.levelNumber);
+        PlayerPrefs.SetInt("level.number", app.model.lvltext.defaultLevelNumber);
 
         // Set the number of enemies for the level
         PlayerPrefs.SetInt("enemies.number", app.model.lvlgen.defaultEnemyAmount);
@@ -36,6 +36,8 @@ public class LevelController : Controller<Application>
     {
         if (!PlayerPrefs.HasKey("level.number") || !PlayerPrefs.HasKey("enemies.number")) return;
         if (app.model.lvltext == null) return;
+
+        if (SceneManager.GetActiveScene().name != "Level") { this.Init(); }
 
         app.model.lvltext.levelNumber = PlayerPrefs.GetInt("level.number") + 1; // change the number of the level
         app.model.lvlgen.enemyAmount = PlayerPrefs.GetInt("enemies.number") + 1;

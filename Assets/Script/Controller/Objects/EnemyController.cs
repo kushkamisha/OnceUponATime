@@ -85,7 +85,6 @@ public class EnemyController : Model<Application>
             }
 
         enemyModel.hp -= val;
-        Debug.Log("Enemy new HP: " + enemyModel.hp);
 
         if (enemyModel.hp <= 0) {
             Debug.Log("the enemy is dead");

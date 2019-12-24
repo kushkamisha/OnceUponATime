@@ -48,7 +48,8 @@ public class CreatureAttack : BaseCreature {
 
     }
 
-    public void move(float x, float y){
+    public void move(float x, float y)
+    {
         base.move(x, y);
         if (this.attackCounter != 0)
         {

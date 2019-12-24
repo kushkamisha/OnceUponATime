@@ -28,8 +28,6 @@ public class PlayerController : Controller<Application>
 
     public void move()
     {
-        Debug.Log("Player hp: " + this.player.hp);
-
         // Shorten the HP bar
         float hpBarDefaultXScale = 0.12159f;
         float hpBarDefaultYScale = 0.01048f;
@@ -105,7 +103,6 @@ public class PlayerController : Controller<Application>
         if (Input.GetKey(KeyCode.Space) && this.player.movement.x == 0 && this.player.movement.y == 0)
         {
             GameObject.Find("Sword").GetComponent<Collider2D>().enabled = true;
-            Debug.Log("Kick");
             switch (direction) {
                 case "right":
                     app.model.player.creatureAnim.Play("AttackRight");
