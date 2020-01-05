@@ -74,5 +74,7 @@ AnimatorController - Animator створений в Unity і дозволяє о
 - Боротьба - стан, при якому ворог наносити пошкодження головному герою (зменшує йому життєві одиниці)
 Схема поведінки ворога зображена на малюнку1.
 
-  Малюнок1. State Machine оведінки патрулюючого орка.
+Малюнок1. State Machine оведінки патрулюючого орка:
+![Orc1 State Machine](ht https://github.com/kushkamisha/OnceUponATime/blob/master/Documents/Orc1StateMachine.png)
+ 
   
