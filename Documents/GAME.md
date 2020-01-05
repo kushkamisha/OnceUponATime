@@ -75,6 +75,6 @@ AnimatorController - Animator створений в Unity і дозволяє о
 Схема поведінки ворога зображена на малюнку1.
 
 Малюнок1. State Machine оведінки патрулюючого орка:
-![Orc1 State Machine](ht https://github.com/kushkamisha/OnceUponATime/blob/master/Documents/Orc1StateMachine.png)
+![Orc1 State Machine](https://github.com/kushkamisha/OnceUponATime/blob/master/Documents/Orc1StateMachine.png)
  
   
