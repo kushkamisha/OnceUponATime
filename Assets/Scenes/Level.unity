@@ -974,8 +974,8 @@ MonoBehaviour:
   chanceUp: 0.25
   chanceRight: 0.5
   chanceLeft: 0.75
-  extraWallX: 10
-  extraWallY: 10
+  extraWallX: 5
+  extraWallY: 5
 --- !u!114 &1022473520
 MonoBehaviour:
   m_ObjectHideFlags: 0
