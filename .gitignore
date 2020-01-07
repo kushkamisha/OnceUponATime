@@ -49,3 +49,4 @@ Logs/*
 .collabignore
 .vscode/*
 Scenes.app/*
+*/*.pdf
